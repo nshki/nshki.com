@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { GlobalStyles, Container } from '../global.css';
 
-const Layout = ({ children }) => (
+const LayoutMain = ({ children }) => (
   <>
     <GlobalStyles />
     <Container>
@@ -11,8 +11,8 @@ const Layout = ({ children }) => (
   </>
 );
 
-Layout.propTypes = {
+LayoutMain.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export { LayoutMain };
