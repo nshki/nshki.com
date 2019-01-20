@@ -11,12 +11,13 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #2b333f;
     margin: 0;
     font-family: 'Merriweather', serif;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: #fff;
   }
 `;
 
