@@ -15,16 +15,24 @@ export const Footer = () => (
     <Menu>
       <MenuList>
         <MenuListItem>
-          <MenuLink href="#" target="_blank">Twitter</MenuLink>
+          <MenuLink href="#" target="_blank">
+            Twitter
+          </MenuLink>
         </MenuListItem>
         <MenuListItem>
-          <MenuLink href="#" target="_blank">GitHub</MenuLink>
+          <MenuLink href="#" target="_blank">
+            GitHub
+          </MenuLink>
         </MenuListItem>
         <MenuListItem>
-          <MenuLink href="#" target="_blank">LinkedIn</MenuLink>
+          <MenuLink href="#" target="_blank">
+            LinkedIn
+          </MenuLink>
         </MenuListItem>
         <MenuListItem>
-          <MenuLink href="#" target="_blank">RSS</MenuLink>
+          <MenuLink href="#" target="_blank">
+            RSS
+          </MenuLink>
         </MenuListItem>
       </MenuList>
     </Menu>

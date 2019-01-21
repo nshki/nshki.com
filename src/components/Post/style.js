@@ -15,5 +15,4 @@ export const Misc = styled.p`
   font-size: 0.875rem;
 `;
 
-export const Content = styled.div`
-`;
+export const Content = styled.div``;

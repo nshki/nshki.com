@@ -15,7 +15,7 @@ export const Header = () => (
         }
       }
     `}
-    render={(data) => (
+    render={data => (
       <Container>
         <div>
           <Title>{data.site.siteMetadata.title}</Title>

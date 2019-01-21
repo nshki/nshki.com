@@ -2,21 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Info, Title, Misc, Content } from './style';
 
-const Post = ({ title, date, time, content }) => (
+const Post = ({ title, date, content }) => (
   <>
     <Info>
       <Title>{title}</Title>
-      <Misc>{date} - {time}</Misc>
+      <Misc>{date}</Misc>
     </Info>
 
-    {content && <Content dangerouslySetInnerHTML={content} />}
+    {content && <Content dangerouslySetInnerHTML={{ __html: content }} />}
   </>
 );
 
 Post.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  time: PropTypes.string.isRequired,
   content: PropTypes.string,
 };
 
