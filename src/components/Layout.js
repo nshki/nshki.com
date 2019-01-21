@@ -4,7 +4,7 @@ import { GlobalStyles, Container } from '../global.css';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
-const LayoutMain = ({ children }) => (
+const Layout = ({ children }) => (
   <>
     <GlobalStyles />
     <Container>
@@ -15,8 +15,8 @@ const LayoutMain = ({ children }) => (
   </>
 );
 
-LayoutMain.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export { LayoutMain };
+export { Layout };

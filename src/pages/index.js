@@ -1,9 +1,9 @@
 import React from 'react';
-import { LayoutMain } from '../components/LayoutMain';
+import { Layout } from '../components/Layout';
 import { Post } from '../components/Post';
 
 const IndexPage = () => (
-  <LayoutMain>
+  <Layout>
     <Post
       title="Hello World"
       date="November 18, 2011"
@@ -14,7 +14,7 @@ const IndexPage = () => (
       date="November 18, 2011"
       time="7 min read"
     />
-  </LayoutMain>
+  </Layout>
 );
 
 export default IndexPage;
