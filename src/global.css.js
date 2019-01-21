@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     overflow-x: hidden;
     font-family: 'Merriweather', serif;
+    line-height: 1.5;
     color: rgba(255, 255, 255, 0.7);
   }
 
