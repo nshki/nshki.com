@@ -1,15 +1,36 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import { Layout } from '../components/Layout';
 import { Post } from '../components/Post';
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
-    <Post title="Hello World" date="November 18, 2011" />
-    <Post
-      title="Switching from a Mac to a Chromebook (as a web developer)"
-      date="November 18, 2011"
-    />
+    {data.allMarkdownRemark.edges.map(({ node }) => (
+      <Post
+        slug={node.fields.slug}
+        title={node.frontmatter.title}
+        date={node.frontmatter.date}
+      />
+    ))}
   </Layout>
 );
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+          }
+        }
+      }
+    }
+  }
+`;
