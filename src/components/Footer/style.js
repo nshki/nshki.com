@@ -84,13 +84,8 @@ export const MenuLink = styled.a`
   font-size: 0.8rem;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
-  transition: color 0.2s ease-in-out;
 
   @media (min-width: 400px) {
     font-size: 0.875rem;
-  }
-
-  &:hover {
-    color: #fff;
   }
 `;
