@@ -7,9 +7,7 @@ const Post = ({ title, date, content }) => (
   <>
     <Info>
       <Title>
-        <Link to="/">
-          {title}
-        </Link>
+        <Link to="/">{title}</Link>
       </Title>
       <Misc>{date}</Misc>
     </Info>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import { VectorLaptop } from '../VectorLaptop';
 import { VectorLamp } from '../VectorLamp';
 import {
@@ -11,35 +12,57 @@ import {
 } from './style';
 
 export const Footer = () => (
-  <Container>
-    <Menu>
-      <MenuList>
-        <MenuListItem>
-          <MenuLink href="#" target="_blank">
-            Twitter
-          </MenuLink>
-        </MenuListItem>
-        <MenuListItem>
-          <MenuLink href="#" target="_blank">
-            GitHub
-          </MenuLink>
-        </MenuListItem>
-        <MenuListItem>
-          <MenuLink href="#" target="_blank">
-            LinkedIn
-          </MenuLink>
-        </MenuListItem>
-        <MenuListItem>
-          <MenuLink href="#" target="_blank">
-            RSS
-          </MenuLink>
-        </MenuListItem>
-      </MenuList>
-    </Menu>
+  <StaticQuery
+    query={graphql`
+      query FooterQuery {
+        site {
+          siteMetadata {
+            twitterUrl
+            githubUrl
+            linkedinUrl
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Container>
+        <Menu>
+          <MenuList>
+            <MenuListItem>
+              <MenuLink
+                href={data.site.siteMetadata.twitterUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </MenuLink>
+            </MenuListItem>
+            <MenuListItem>
+              <MenuLink
+                href={data.site.siteMetadata.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </MenuLink>
+            </MenuListItem>
+            <MenuListItem>
+              <MenuLink
+                href={data.site.siteMetadata.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </MenuLink>
+            </MenuListItem>
+          </MenuList>
+        </Menu>
 
-    <Vectors>
-      <VectorLaptop />
-      <VectorLamp />
-    </Vectors>
-  </Container>
+        <Vectors>
+          <VectorLaptop />
+          <VectorLamp />
+        </Vectors>
+      </Container>
+    )}
+  />
 );

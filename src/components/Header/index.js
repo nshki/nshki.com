@@ -19,9 +19,7 @@ export const Header = () => (
       <Container>
         <div>
           <Title>
-            <Link to="/">
-              {data.site.siteMetadata.title}
-            </Link>
+            <Link to="/">{data.site.siteMetadata.title}</Link>
           </Title>
           <Slogan>{data.site.siteMetadata.description}</Slogan>
         </div>
