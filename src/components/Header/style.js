@@ -31,6 +31,10 @@ export const Title = styled.h1`
     margin-top: 0;
     font-size: 2.25rem;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const Slogan = styled.p`

@@ -1,11 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import { Info, Title, Misc, Content } from './style';
 
 const Post = ({ title, date, content }) => (
   <>
     <Info>
-      <Title>{title}</Title>
+      <Title>
+        <Link to="/">
+          {title}
+        </Link>
+      </Title>
       <Misc>{date}</Misc>
     </Info>
 

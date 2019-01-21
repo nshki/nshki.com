@@ -21,6 +21,15 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 700;
     color: #fff;
   }
+
+  a {
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: #ffd794;
+    }
+  }
 `;
 
 export const Container = styled.div`

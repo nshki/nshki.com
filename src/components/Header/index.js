@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import { Container, Title, Slogan } from './style';
 import { VectorLogo } from '../VectorLogo';
 
@@ -18,7 +18,11 @@ export const Header = () => (
     render={data => (
       <Container>
         <div>
-          <Title>{data.site.siteMetadata.title}</Title>
+          <Title>
+            <Link to="/">
+              {data.site.siteMetadata.title}
+            </Link>
+          </Title>
           <Slogan>{data.site.siteMetadata.description}</Slogan>
         </div>
 
