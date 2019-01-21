@@ -8,6 +8,7 @@ export const Container = styled.footer`
   align-items: center;
   width: 100%;
   margin-top: auto;
+  padding-top: 4rem;
   border-bottom: 10px solid #000;
 
   @media (min-width: 650px) {
