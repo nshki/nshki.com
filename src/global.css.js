@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: #2b333f;
     margin: 0;
+    overflow-x: hidden;
     font-family: 'Merriweather', serif;
     color: rgba(255, 255, 255, 0.7);
   }
@@ -22,8 +23,11 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
   max-width: 720px;
   width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
 `;
