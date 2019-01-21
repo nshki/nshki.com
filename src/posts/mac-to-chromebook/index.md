@@ -60,14 +60,11 @@ Again, turns out there are several options, though in the end I found only one t
 
 I tested Cloud9 by using the free tier exclusively for a pull request on a volunteer project using a Rails & React.js stack. My main gripes with Cloud9 were:
 
-- _I had to implement a lot of workarounds in my development flow_
-  Servers wouldn’t run without specifying $C9_HOSTNAME everywhere, PostgreSQL databases on Cloud9 didn’t support unicode by default, and only ports 8080, 8081, and 8082 were open.
+- _I had to implement a lot of workarounds in my development flow_. Servers wouldn’t run without specifying $C9_HOSTNAME everywhere, PostgreSQL databases on Cloud9 didn’t support unicode by default, and only ports 8080, 8081, and 8082 were open.
 
-- _It’s not very customizable_
-It ships with a classic and flat theme, but both pale in comparison to modern editors like Visual Studio Code or Atom.
+- _It’s not very customizable_. It ships with a classic and flat theme, but both pale in comparison to modern editors like Visual Studio Code or Atom.
 
-- _Its future seemed unclear_
-It recently got acquired by Amazon, its favicon is still not Retina-ready in 2017, and its blog is not very active.
+- _Its future seemed unclear_. It recently got acquired by Amazon, its favicon is still not Retina-ready in 2017, and its blog is not very active.
 
 Although I _could_ live with these issues, I didn’t want to have to sacrifice my development experience just so I could own a new and shiny Pixelbook.
 

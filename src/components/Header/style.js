@@ -24,12 +24,11 @@ export const Container = styled.header`
 
 export const Title = styled.h1`
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
 
   @media (min-width: 400px) {
     margin-top: 0;
-    font-size: 2.25rem;
   }
 
   a {
