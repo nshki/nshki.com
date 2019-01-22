@@ -17,6 +17,7 @@ const PostTemplate = ({ data, pageContext }) => {
         pathname={post.fields.slug}
       />
       <Post
+        slug={post.fields.slug}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
         readingTime={post.fields.readingTime.text}

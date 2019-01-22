@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 2rem 0;
+  margin: ${props => (props.singlePost ? '2rem 0 0 0' : '2rem 0')};
 `;
 
 export const Title = styled.h2`
@@ -56,5 +56,16 @@ export const Content = styled.div`
   ul {
     list-style: square;
     padding-left: 1.25em;
+  }
+`;
+
+export const Actions = styled.ul`
+  margin: 5rem 0 1rem 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    font-size: 0.875rem;
+    text-decoration: none;
   }
 `;
