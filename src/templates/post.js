@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { Layout } from '../components/Layout';
 import { SEO } from '../components/SEO';
 import { Post } from '../components/Post';
+import { PrevNext } from '../components/PrevNext';
 
 const PostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark;
@@ -21,6 +22,7 @@ const PostTemplate = ({ data, pageContext }) => {
         readingTime={post.fields.readingTime.text}
         content={post.html}
       />
+      <PrevNext previous={previous} next={next} />
     </Layout>
   );
 };

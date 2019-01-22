@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   margin: 0;
-  font-size: ${props => props.large ? '1.75rem' : '1.6rem'};
+  font-size: ${props => (props.large ? '1.75rem' : '1.6rem')};
   line-height: 1.2;
 
   a {
@@ -39,8 +39,8 @@ export const Content = styled.div`
     }
   }
 
-  & :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
+  & :not(pre) > code[class*='language-'],
+  pre[class*='language-'] {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
