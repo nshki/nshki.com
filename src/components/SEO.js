@@ -26,6 +26,7 @@ const SEO = ({
         siteMetadata: { defaultTitle, defaultDescription, siteUrl },
       },
     }) => {
+      const titleTemplate = title ? `%s | ${defaultTitle}` : defaultTitle;
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
@@ -33,7 +34,7 @@ const SEO = ({
       };
 
       return (
-        <Helmet title={seo.title} titleTemplate={`%s - ${defaultTitle}`}>
+        <Helmet title={seo.title} titleTemplate={titleTemplate}>
           <link rel="icon" href="/favicon.png" />
           {seo.url && <meta property="og:url" content={seo.url} />}
           {seo.description && (

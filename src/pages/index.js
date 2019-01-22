@@ -6,7 +6,7 @@ import { Post } from '../components/Post';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Personal blog of a software engineer" />
+    <SEO />
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <Post
         key={node.fields.slug}
