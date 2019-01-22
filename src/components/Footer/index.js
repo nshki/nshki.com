@@ -55,6 +55,15 @@ export const Footer = () => (
                 LinkedIn
               </MenuLink>
             </MenuListItem>
+            <MenuListItem>
+              <MenuLink
+                href="/rss.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RSS
+              </MenuLink>
+            </MenuListItem>
           </MenuList>
         </Menu>
 

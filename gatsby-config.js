@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Nishiki Liu`,
     description: `Personal blog of a software engineer.`,
-    url: `https://nshki.com`,
+    siteUrl: `https://nshki.com`,
     twitterUrl: `https://mobile.twitter.com/nshki_`,
     githubUrl: `https://github.com/nshki`,
     linkedinUrl: `https://www.linkedin.com/in/nshki/`,
@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

@@ -16,7 +16,7 @@ const SEO = ({
           siteMetadata {
             defaultTitle: title
             defaultDescription: description
-            siteUrl: url
+            siteUrl
           }
         }
       }
