@@ -22,6 +22,10 @@ export const Misc = styled.p`
 export const Content = styled.div`
   line-height: 1.7;
 
+  strong {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
   p {
     margin: 1.5em 0;
 
@@ -33,5 +37,16 @@ export const Content = styled.div`
     & + h6 {
       margin-top: 3rem;
     }
+  }
+
+  ul {
+    list-style: square;
+    padding-left: 1.25em;
+  }
+
+  code {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    font-family: Consolas, Menlo, Monaco, monospace;
   }
 `;
