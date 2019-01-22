@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Nishiki Liu`,
     description: `Personal blog of a software engineer.`,
+    url: `https://nshki.com`,
     twitterUrl: `https://mobile.twitter.com/nshki_`,
     githubUrl: `https://github.com/nshki`,
     linkedinUrl: `https://www.linkedin.com/in/nshki/`,

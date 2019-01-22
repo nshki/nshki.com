@@ -1,6 +1,7 @@
 ---
 title: Switching from a Mac to a Chromebook (as a web developer)
 date: '2017-11-26'
+summary: This is my experience switching from a 2014 Retina Macbook Pro to a Google Pixelbook.
 ---
 
 _This is my experience switching from a 2014 Retina Macbook Pro to a Google Pixelbook. Doing this is by no means for everyone, but I wanted to share my findings for anyone toying with the idea._
