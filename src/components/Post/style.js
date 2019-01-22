@@ -39,14 +39,22 @@ export const Content = styled.div`
     }
   }
 
+  & :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  blockquote {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1px 1.5em;
+    border-left: 2px solid #ffd794;
+    font-style: italic;
+  }
+
   ul {
     list-style: square;
     padding-left: 1.25em;
-  }
-
-  code {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 3px;
-    font-family: Consolas, Menlo, Monaco, monospace;
   }
 `;
