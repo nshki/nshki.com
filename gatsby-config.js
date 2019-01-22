@@ -17,6 +17,7 @@ module.exports = {
         plugins: [
           `gatsby-remark-smartypants`,
           `gatsby-remark-prismjs`,
+          `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-images`,
             options: {

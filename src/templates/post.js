@@ -18,6 +18,7 @@ const PostTemplate = ({ data, pageContext }) => {
       <Post
         title={post.frontmatter.title}
         date={post.frontmatter.date}
+        readingTime={post.fields.readingTime.text}
         content={post.html}
       />
     </Layout>
@@ -33,6 +34,9 @@ export const postQuery = graphql`
       html
       fields {
         slug
+        readingTime {
+          text
+        }
       }
       frontmatter {
         title

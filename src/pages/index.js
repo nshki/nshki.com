@@ -13,6 +13,7 @@ const IndexPage = ({ data }) => (
         slug={node.fields.slug}
         title={node.frontmatter.title}
         date={node.frontmatter.date}
+        readingTime={node.fields.readingTime.text}
       />
     ))}
   </Layout>
@@ -27,6 +28,9 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
+            readingTime {
+              text
+            }
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
