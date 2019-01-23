@@ -39,7 +39,18 @@ export const Content = styled.div`
     }
   }
 
-  & :not(pre) > code[class*='language-'],
+  .gatsby-highlight {
+    & + h1,
+    & + h2,
+    & + h3,
+    & + h4,
+    & + h5,
+    & + h6 {
+      margin-top: 3rem;
+    }
+  }
+
+  & *:not(pre) > code[class*='language-'],
   pre[class*='language-'] {
     background-color: rgba(0, 0, 0, 0.5);
   }
