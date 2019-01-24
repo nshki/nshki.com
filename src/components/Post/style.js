@@ -68,6 +68,10 @@ export const Content = styled.div`
     list-style: square;
     padding-left: 1.25em;
   }
+
+  ol {
+    padding-left: 1.25em;
+  }
 `;
 
 export const Actions = styled.ul`

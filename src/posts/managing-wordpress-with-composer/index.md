@@ -111,7 +111,7 @@ $ composer install
 
 ### Adding Premium Plugins
 
-Premium plugins are generally not available via the official WordPress plugin registry. Depending on the plugin creator, there may be specific documentation to add the plugin to your project.
+Premium plugins are generally not available via the official WordPress plugin registry. Depending on the plugin creator, there may be specific documentation to add the plugin via Composer to your project.
 
 If no such documentation exists though, there are still ways to have Composer manage your premium plugins.
 
