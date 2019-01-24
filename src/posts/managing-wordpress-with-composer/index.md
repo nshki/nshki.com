@@ -177,6 +177,12 @@ Now in your WordPress repository, add the following under `"repositories"` in `c
 
 `vcs` stands for version control system. The `url` can just be the SSH string your service provides for your repo.
 
+Now you can require that plugin in the familiar format (under `"require"`):
+
+```json
+"<your name>/<repo name>": "dev-master"
+```
+
 Now run:
 
 ```
