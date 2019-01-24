@@ -36,6 +36,7 @@ const SEO = ({
       return (
         <Helmet title={seo.title} titleTemplate={titleTemplate}>
           <link rel="icon" href="/favicon.png" />
+          <meta name="twitter:card" content="summary" />
           {seo.url && <meta property="og:url" content={seo.url} />}
           {seo.description && (
             <meta name="description" content={seo.description} />
