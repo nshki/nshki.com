@@ -309,6 +309,6 @@ Your repository should now be boiled down to just the essentials.
 
 Using Composer for WordPress is by no means necessary, but for someone like me who is used to using package managers like Bundler or Yarn, it's a huge boon to productivity and makes automation much easier down the line.
 
-Deploying with Composer is quite easy well. If you're managing your own servers, just install Composer and all you'll have to do is clone the repository and `composer install`.
+Deploying with Composer is quite easy as well. If you're managing your own servers, just install Composer and all you'll have to do is clone the repository and `composer install`.
 
 If this setup works well for you or you have any questions, [please reach out over Twitter](https://mobile.twitter.com/nshki_)!
