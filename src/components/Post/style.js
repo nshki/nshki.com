@@ -28,26 +28,6 @@ export const Content = styled.div`
 
   p {
     margin: 1.5em 0;
-
-    & + h1,
-    & + h2,
-    & + h3,
-    & + h4,
-    & + h5,
-    & + h6 {
-      margin-top: 3rem;
-    }
-  }
-
-  .gatsby-highlight {
-    & + h1,
-    & + h2,
-    & + h3,
-    & + h4,
-    & + h5,
-    & + h6 {
-      margin-top: 3rem;
-    }
   }
 
   & *:not(pre) > code[class*='language-'],
@@ -71,6 +51,20 @@ export const Content = styled.div`
 
   ol {
     padding-left: 1.25em;
+  }
+
+  p,
+  ul,
+  ol,
+  .gatsby-highlight {
+    & + h1,
+    & + h2,
+    & + h3,
+    & + h4,
+    & + h5,
+    & + h6 {
+      margin-top: 3rem;
+    }
   }
 `;
 
