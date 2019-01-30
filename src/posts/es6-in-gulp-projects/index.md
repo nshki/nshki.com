@@ -9,7 +9,7 @@ _This post covers how to setup a Gulp project to use ES6 and also accounts for u
 
 ### Preface
 
-The front end development landscape is changing extremely quickly. React, Redux, Vue, VueX, Webpack, and SPAs are just a few of the hot phrases you'll see today. However, many teams and individuals still use [Gulp](https://gulpjs.com/) -- it is a tried and true build tool and sometimes from an operational standpoint, it makes sense for it to continue to be used.
+The front end development landscape is changing extremely quickly. React, Redux, Vue, Vuex, Webpack, and SPAs are just a few of the hot phrases you'll see today. However, many teams and individuals still use [Gulp](https://gulpjs.com/) -- it is a tried and true build tool and sometimes from an operational standpoint, it makes sense for it to continue to be used.
 
 Even if adopting React, Vue, or some other front end framework is not a viable option for some, adopting ES6 certainly is. ES6 is the next iteration of JavaScript that introduces many new features, and while not all browsers have it fully implemented, they are certainly on their way to do so.
 
