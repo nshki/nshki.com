@@ -56,6 +56,7 @@ export const Content = styled.div`
   p,
   ul,
   ol,
+  iframe,
   .gatsby-highlight {
     & + h1,
     & + h2,
