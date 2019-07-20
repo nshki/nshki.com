@@ -6,6 +6,8 @@ summary: How to setup a Gulp project to use ES6 and still use libraries such as 
 
 _This post covers how to setup a Gulp project to use ES6 and also accounts for usage of libraries such as jQuery._
 
+**Update as of July 19th, 2019**: Thanks to [@regiscamimura](https://twitter.com/regiscamimura) for pointing out that the Rollup NPM package is now required for this process to work. The article has been updated to reflect that!
+
 
 ### Preface
 
@@ -29,7 +31,7 @@ $ npm init
 Follow the prompts, and you'll have a `package.json` in your directory. Now let's install some development dependencies.
 
 ```bash
-$ npm install --save-dev @babel/core gulp gulp-better-rollup rollup-plugin-babel rollup-plugin-node-resolve rollup-plugin-commonjs
+$ npm install --save-dev @babel/core gulp gulp-better-rollup rollup rollup-plugin-babel rollup-plugin-node-resolve rollup-plugin-commonjs
 ```
 
 That seems like a mouthful, what did we just install?
@@ -37,6 +39,7 @@ That seems like a mouthful, what did we just install?
 - [@babel/core](https://www.npmjs.com/package/@babel/core) -- A tool that transpiles ES6 code into JavaScript that any browser will understand.
 - [gulp](https://www.npmjs.com/package/gulp) -- Our build tool. :)
 - [gulp-better-rollup](https://www.npmjs.com/package/gulp-better-rollup) -- A Gulp plugin that allows us to use [Rollup](https://rollupjs.org/guide/en), a module bundler that allows us to use ES6 imports and exports in our code.
+- [rollup](https://www.npmjs.com/package/rollup) -- The module bundler referenced above.
 - [rollup-plugin-babel](https://www.npmjs.com/package/rollup-plugin-babel) -- A Rollup plugin that integrates Babel into the bundling process.
 - [rollup-plugin-node-resolve](https://www.npmjs.com/package/rollup-plugin-node-resolve) -- A Rollup plugin that allows us to use third party modules in `node_modules/`.
 - [rollup-plugin-commonjs](https://www.npmjs.com/package/rollup-plugin-commonjs) -- A Rollup plugin that converts [CommonJS](https://en.wikipedia.org/wiki/CommonJS) modules to ES6 so we can import them without issues.
