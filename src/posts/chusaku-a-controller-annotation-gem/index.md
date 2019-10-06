@@ -34,12 +34,12 @@ And our file would then look something like:
 
 ```ruby
 class TacosController < ApplicationController
-  # @route [POST] /make-myself-a-taco (create_taco)
+  # @route POST /make-myself-a-taco (create_taco)
   def create
     # ...
   end
 
-  # @route [DELETE] /put-the-taco-in-my-tummy (eat_taco)
+  # @route DELETE /put-the-taco-in-my-tummy (eat_taco)
   def destroy
     # ...
   end
