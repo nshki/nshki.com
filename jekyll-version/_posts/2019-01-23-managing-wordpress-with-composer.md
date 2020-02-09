@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Managing WordPress With Composer
 date: 2019-01-23
+permalink: /managing-wordpress-with-composer/
 summary: How to use Composer to offload WordPress core and plugin management to reduce your project's repo size.
 ---
 

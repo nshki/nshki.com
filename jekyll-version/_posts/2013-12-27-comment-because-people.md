@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Comment, Because People
 date: 2013-12-27
+permalink: /comment-because-people/
 summary: Good code needs comments. Good code needs comments because people.
 ---
 

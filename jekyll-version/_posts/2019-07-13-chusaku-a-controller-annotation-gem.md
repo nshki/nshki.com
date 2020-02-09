@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Chusaku, a Controller Annotation Gem
 date: 2019-07-13
+permalink: /chusaku-a-controller-annotation-gem/
 summary: A write-up of a Rails controller annotation gem.
 ---
 
@@ -81,7 +83,7 @@ At this point, I decided that being able to categorize lines of a file into thre
 
 This is how I pictured it in my head:
 
-![Visualization](./visualization.png)
+![Visualization](/assets/posts/chusaku-a-controller-annotation-gem/visualization.png)
 
 This led to the creation of [Chusaku::Parser](https://github.com/nshki/chusaku/blob/master/lib/chusaku/parser.rb).
 

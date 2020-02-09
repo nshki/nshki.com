@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Getting Into Open Source
 date: 2019-02-09
+permalink: /getting-into-open-source/
 summary: My thoughts and experiences around getting involved in open source software through a project called if me.
 ---
 
@@ -40,7 +42,7 @@ It was great collecting feedback from other contributors via Slack and GitHub to
 
 The design was eventually implemented by the community and is continually being iterated on.
 
-![if me redesign](./ifme.png)
+![if me redesign](/assets/posts/getting-into-open-source/ifme.png)
 
 
 ### The Community Is the Most Important Part

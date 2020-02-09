@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Reviving the Blog
 date: 2019-01-21
+permalink: /reviving-the-blog/
 summary: Motivations and thoughts around reviving my personal blog.
 ---
 

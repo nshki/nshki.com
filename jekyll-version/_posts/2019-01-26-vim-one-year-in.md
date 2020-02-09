@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Vim, One Year In
 date: 2019-01-26
+permalink: /vim-one-year-in/
 summary: Reflecting on my decision to exclusively use Vim one year ago.
 ---
 
@@ -14,7 +16,7 @@ As a fallback, if I hated it, I could just run Ubuntu on my Chromebook and go ba
 
 Turns out I didn't hate one bit of it.
 
-![My Vim setup](./setup.png)
+![My Vim setup](/assets/posts/vim-one-year-in/setup.png)
 
 Shown here is what my current Vim setup looks like. It's technically [Neovim](https://neovim.io/), but I still count it as Vim, and I have [Tmux](https://github.com/tmux/tmux/wiki) in the mix as well.
 

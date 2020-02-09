@@ -1,6 +1,8 @@
 ---
+layout: post
 title: ES6 in Gulp Projects
 date: 2019-01-29
+permalink: /es6-in-gulp-projects/
 summary: How to setup a Gulp project to use ES6 and still use libraries such as jQuery.
 ---
 

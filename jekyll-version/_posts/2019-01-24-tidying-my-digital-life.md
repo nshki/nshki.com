@@ -1,12 +1,14 @@
 ---
+layout: post
 title: Tidying My Digital Life
 date: 2019-01-24
+permalink: /tidying-my-digital-life/
 summary: Tidying up and Marie Kondo-fying my digital life.
 ---
 
 _This post is about tidying up and [Marie Kondo](https://konmari.com/)-fying my digital life. Because decluttering my mental space is just as important as decluttering my physical space._
 
-![Marie Kondo](./tidying.png)
+![Marie Kondo](/assets/posts/tidying-my-digital-life/tidying.png)
 
 
 ### Preface
@@ -41,7 +43,7 @@ I use Gmail. I always archive my emails, I never delete. That means I have a _lo
 
 I generally always maintain a zero inbox with no unread mail.
 
-![My zero inbox](./nomail.png)
+![My zero inbox](/assets/posts/tidying-my-digital-life/nomail.png)
 
 I used to manually categorize my emails but I stopped doing that -- it was way too much effort than it was worth. Companies like Google build sophisticated search algorithms for a reason. I use them pretty liberally.
 

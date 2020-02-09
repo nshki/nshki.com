@@ -1,6 +1,8 @@
 ---
+layout: post
 title: Switching From a Mac to a Chromebook (as a Web Developer)
-date: '2017-11-26'
+date: 2017-11-26
+permalink: /mac-to-chromebook/
 summary: This is my experience switching from a 2014 Retina Macbook Pro to a Google Pixelbook.
 ---
 
@@ -49,7 +51,7 @@ Email, calendar, word processing, spreadsheets, presentations, reminders, notes,
 
 I was really only concerned with two things: **design software and development environment**.
 
-![Figma](./figma.png)
+![Figma](/assets/posts/mac-to-chromebook/figma.png)
 
 Turns out [Figma](https://www.figma.com/) is an excellent web-based design tool — its toolset closely mirrors Sketch with a few minor differences. After spending a couple weeks exclusively using Figma, I determined that I could live without Sketch and Pixelmator on the desktop.
 
@@ -77,7 +79,7 @@ This had a lot of promise, but I ran into a one gamebreaker gripe: _I didn’t h
 
 **The third option was to setup a VPS**, ~~and this is what I'm sticking to as I write this~~. This seems like the correct option as a Chromebook user — to put my faith in the cloud and commit to using the cloud for all my computing needs.
 
-![VPS](./vps.png)
+![VPS](/assets/posts/mac-to-chromebook/vps.png)
 
 Now, I could have put the Pixelbook in developer mode, installed Crouton, and run Linux from the device natively, but I didn’t want to deal with hardware incompatibility, losing Google Assistant, and making my device way less secure.
 
@@ -105,13 +107,13 @@ This feature is still under active development, but the Pixelbook (and a few oth
 
 **EDIT (September 26, 2018)**: Linux Apps are now available on the stable channel for Chrome OS, so this should be enable-able out of the box!
 
-![Linux Apps feature](./linux.png)
+![Linux Apps feature](/assets/posts/mac-to-chromebook/linux.png)
 
 This takes the cake for me for my Chrome OS development setup. This is similar to having a Termux setup, except that the Linux environment allows sudo and is natively supported by the Chrome OS team. Furthermore, *you don’t need developer mode enabled*, so you get all your security and peace of mind back.
 
 ~~Since Linux is running in a VM, accessing web apps requires you to use the VM’s IP address or simply just `penguin.linux.test`, which is more convenient.~~ As of stable versions of Chrome OS in early 2019, accessing `localhost` now works as expected.
 
-![Crostini](./crostini.png)
+![Crostini](/assets/posts/mac-to-chromebook//crostini.png)
 
 So far, I’ve run into no issues with my development environment or command line tools. I’m quite a happy camper.
 
