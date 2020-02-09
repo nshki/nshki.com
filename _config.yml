@@ -1,0 +1,14 @@
+title: Nishiki Liu
+email: nishiki.liu@gmail.com
+description: "Personal blog of a software engineer."
+baseurl: ""
+url: "https://nshki.com/"
+twitter:
+  username: nshki_
+  card: summary
+github:
+  username: nshki
+linkedin:
+  username: nshki
+plugins:
+  - jekyll-feed

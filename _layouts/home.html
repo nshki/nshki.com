@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{{ content }}
+
+{%- if site.posts.size > 0 -%}
+  {%- for post in site.posts -%}
+    <div class="post">
+      <h2 class="post__title">
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h2><!-- .post__title -->
+
+      <p class="post__meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ post.date | date: '%b %-d, %Y' }}
+        </time>
+      </p><!-- .post__meta -->
+    </div><!-- .post -->
+  {%- endfor -%}
+{%- endif -%}
