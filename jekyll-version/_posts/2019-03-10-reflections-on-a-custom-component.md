@@ -3,7 +3,7 @@ layout: post
 title: Reflections on a Custom "Component"
 date: 2019-03-10
 permalink: /reflections-on-a-custom-component/
-summary: My thoughts on defining a JavaScript pattern that I called "component" from pre-React days.
+description: My thoughts on defining a JavaScript pattern that I called "component" from pre-React days.
 ---
 
 _This post is a collection of my thoughts, both good and bad, on defining a JavaScript pattern that I called "Component" prior to adopting React._

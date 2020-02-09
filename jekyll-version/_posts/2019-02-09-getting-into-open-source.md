@@ -3,7 +3,7 @@ layout: post
 title: Getting Into Open Source
 date: 2019-02-09
 permalink: /getting-into-open-source/
-summary: My thoughts and experiences around getting involved in open source software through a project called if me.
+description: My thoughts and experiences around getting involved in open source software through a project called if me.
 ---
 
 _These are my thoughts and experiences around getting involved in open source software through a project called [if me](https://www.if-me.org/). This is for anyone who has wanted to get into open source but hasn't yet._

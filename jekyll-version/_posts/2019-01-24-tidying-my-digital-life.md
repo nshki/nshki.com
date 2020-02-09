@@ -3,7 +3,7 @@ layout: post
 title: Tidying My Digital Life
 date: 2019-01-24
 permalink: /tidying-my-digital-life/
-summary: Tidying up and Marie Kondo-fying my digital life.
+description: Tidying up and Marie Kondo-fying my digital life.
 ---
 
 _This post is about tidying up and [Marie Kondo](https://konmari.com/)-fying my digital life. Because decluttering my mental space is just as important as decluttering my physical space._

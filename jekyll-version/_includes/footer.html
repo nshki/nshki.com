@@ -1,0 +1,34 @@
+<footer class="footer">
+  <menu class="footer__menu">
+    <ul class="footer__menu__items">
+      <li class="footer__menu__item">
+        <a href="https://twitter.com/{{ site.twitter.username }}">
+          Twitter
+        </a>
+      </li><!-- .footer__menu__item -->
+
+      <li class="footer__menu__item">
+        <a href="https://github.com/{{ site.github.username }}">
+          GitHub
+        </a>
+      </li><!-- .footer__menu__item -->
+
+      <li class="footer__menu__item">
+        <a href="https://linkedin.com/in/{{ site.linkedin.username }}">
+          LinkedIn
+        </a>
+      </li><!-- .footer__menu__item -->
+
+      <li class="footer__menu__item">
+        <a href="{{ '/feed.xml' | relative_url }}">
+          RSS
+        </a>
+      </li><!-- .footer__menu__item -->
+    </ul><!-- .footer__menu__items -->
+  </menu><!-- .footer__menu -->
+
+  <div class="footer__graphics">
+    {%- include laptop.html -%}
+    {%- include lamp.html -%}
+  </div><!-- .footer__graphics -->
+</footer><!--- .footer -->

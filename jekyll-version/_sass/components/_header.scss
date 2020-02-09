@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2rem 0;
+
+  @media (min-width: 400px) {
+    align-items: center;
+    margin: 3.375rem 0;
+  }
+
+  svg {
+    max-width: 50px;
+    height: auto;
+
+    @media (min-width: 400px) {
+      max-width: none;
+    }
+  }
+}
+
+.header__title {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+
+  @media (min-width: 400px) {
+    margin-top: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.header__slogan {
+  margin: 0;
+  font-size: 0.8rem;
+
+  @media (min-width: 400px) {
+    font-size: 0.875rem;
+  }
+}

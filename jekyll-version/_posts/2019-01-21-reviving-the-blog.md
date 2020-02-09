@@ -3,7 +3,7 @@ layout: post
 title: Reviving the Blog
 date: 2019-01-21
 permalink: /reviving-the-blog/
-summary: Motivations and thoughts around reviving my personal blog.
+description: Motivations and thoughts around reviving my personal blog.
 ---
 
 For the past several years, I've been treating my website primarily as an online résumé of sorts -- I focused on making it flashy, telling my professional story, and selling myself.

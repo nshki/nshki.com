@@ -3,7 +3,7 @@ layout: post
 title: Comment, Because People
 date: 2013-12-27
 permalink: /comment-because-people/
-summary: Good code needs comments. Good code needs comments because people.
+description: Good code needs comments. Good code needs comments because people.
 ---
 
 > "Good code doesn’t need comments, it should be self-documenting and easy to understand."

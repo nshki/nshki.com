@@ -3,7 +3,7 @@ layout: post
 title: Test-Driven Reviews
 date: 2019-11-09
 permalink: /test-driven-reviews/
-summary: My thoughts around using tests as the guideline for code reviews.
+description: My thoughts around using tests as the guideline for code reviews.
 ---
 
 You've likely heard of test-driven development. It's a practice that involves writing automated tests before writing code that accomplishes the feature or objective you're working on. You want to write tests that fail at first and only pass when the implementation can be considered "complete". It's a very powerful way of approaching software development.

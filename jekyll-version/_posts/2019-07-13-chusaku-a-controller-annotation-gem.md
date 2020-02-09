@@ -3,7 +3,7 @@ layout: post
 title: Chusaku, a Controller Annotation Gem
 date: 2019-07-13
 permalink: /chusaku-a-controller-annotation-gem/
-summary: A write-up of a Rails controller annotation gem.
+description: A write-up of a Rails controller annotation gem.
 ---
 
 I'm an avid user of [Annotate](https://github.com/ctran/annotate_models), a lovely gem written by [Cuong Tran](https://github.com/ctran) that annotates various Rails project files with summaries of the database schema. Without flipping back and forth between models, factories, and `schema.rb`, the annotations allow me to see what columns are present in relevant tables at a quick glance.

@@ -3,7 +3,7 @@ layout: post
 title: Testing is For All of Us
 date: 2019-04-20
 permalink: /testing-is-for-all-of-us/
-summary: My thoughts on why I think automated testing is a crucial part of any software team.
+description: My thoughts on why I think automated testing is a crucial part of any software team.
 ---
 
 If you're a software engineer, regardless of if you studied CS in college, learned programming through the Internet, or went through a bootcamp, you've heard it time and time again.

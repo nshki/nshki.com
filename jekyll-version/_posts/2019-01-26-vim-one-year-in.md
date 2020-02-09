@@ -3,7 +3,7 @@ layout: post
 title: Vim, One Year In
 date: 2019-01-26
 permalink: /vim-one-year-in/
-summary: Reflecting on my decision to exclusively use Vim one year ago.
+description: Reflecting on my decision to exclusively use Vim one year ago.
 ---
 
 I started exclusively using [Vim](https://www.vim.org/) as my editor a little over a year ago.
