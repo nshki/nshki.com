@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Montserrat:700|Fira+Mono');
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #fff;
+}
+
+code {
+  font-family: 'Fira Mono', monospace;
 }
 
 a {
