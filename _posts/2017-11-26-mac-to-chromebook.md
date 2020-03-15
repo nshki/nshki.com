@@ -36,7 +36,7 @@ Google has been competing with Apple for a while now, with the likes of Android,
 
 This was the primary reason I switched from iOS to Android 3 years ago, and it’s one of the few reasons why I’m picking Chrome OS over macOS today.
 
-![My Pixelbook](./pixelbook.jpg)
+![My Pixelbook](/assets/posts/mac-to-chromebook/pixelbook.jpg)
 
 Just this past October, Google announced the Pixelbook, a gorgeously made machine with top-notch specs, tablet and laptop modes, and a Wacom-powered pen. This was the first computer that got me to the same level of excitement as the unibody MacBook since 2008.
 
