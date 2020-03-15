@@ -42,10 +42,10 @@ Again, the setup for this was pretty straightforward. I jumped back into my rout
 
 ## SSH software
 
-Finally, the last piece here was to setup software on my device to properly accept SSH login requests at port 22. This will vary depending on which OS is being used, but in my case, I was using Ubuntu Linux, so I installed the `openssh` package with:
+Finally, the last piece here was to setup software on my device to properly accept SSH login requests at port 22. This will vary depending on which OS is being used, but in my case, I was using Ubuntu Linux, so I installed the `openssh-server` package with:
 
 ```bash
-$ sudo apt update && sudo apt install openssh
+$ sudo apt update && sudo apt install openssh-server
 ```
 
 And now this computer was ready to allow username/password combinations for existing users for SSH logins. Allowing connections with SSH keys and disabling passwords is something that can be configured with most SSH packages as well.
