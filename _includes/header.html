@@ -1,11 +1,15 @@
 <header class="header" role="banner">
-  <div>
-    <h1 class="header__title">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    </h1><!-- .header__title -->
+  <div class="container">
+    <div class="header__content">
+      <div>
+        <h1 class="header__title">
+          <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        </h1><!-- .header__title -->
 
-    <p class="header__slogan">{{ site.description }}</p>
-  </div>
+        <p class="header__slogan">{{ site.description }}</p>
+      </div>
 
-  {%- include logo.html -%}
+      {%- include logo.html -%}
+    </div><!-- .header__content -->
+  </div><!-- .container -->
 </header><!-- .header -->

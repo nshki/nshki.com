@@ -3,7 +3,10 @@
   flex-direction: column;
   max-width: 720px;
   width: 100%;
-  min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+body > .container {
+  min-height: 100vh;
 }

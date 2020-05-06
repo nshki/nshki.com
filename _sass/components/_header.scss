@@ -1,14 +1,7 @@
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 2rem 0;
-
-  @media (min-width: 400px) {
-    align-items: center;
-    margin: 3.375rem 0;
-  }
+  background-color: rgba(#000, 0.4);
+  margin: 0 0 2rem;
+  padding: 2rem 0;
 
   svg {
     max-width: 50px;
@@ -17,6 +10,17 @@
     @media (min-width: 400px) {
       max-width: none;
     }
+  }
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: 400px) {
+    align-items: center;
   }
 }
 
