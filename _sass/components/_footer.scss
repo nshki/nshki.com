@@ -45,19 +45,6 @@
 }
 
 .footer__menu {
-  margin: 0 0 2rem 0;
-  padding: 0;
-
-  @media (min-width: 300px) {
-    margin: 0;
-  }
-
-  @media (min-width: 650px) {
-    transform: translateY(1em);
-  }
-}
-
-.footer__menu__items {
   list-style: none;
   margin: 0;
   padding: 0;
