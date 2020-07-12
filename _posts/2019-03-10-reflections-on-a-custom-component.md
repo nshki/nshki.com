@@ -103,10 +103,7 @@ Obviously, the CSS also needs to be written, but assuming it is, we've successfu
 
 Here's an accompanying pen:
 
-<iframe height="350" style="width: 100%;" scrolling="no" title="Component" src="//codepen.io/nshki_/embed/vPJGym/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/nshki_/pen/vPJGym/'>Component</a> by Nishiki Liu
-  (<a href='https://codepen.io/nshki_'>@nshki_</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<iframe height="350" style="width: 100%;" title="Component" src="//codepen.io/nshki_/embed/vPJGym/?height=265&theme-id=0&default-tab=js,result" allowfullscreen></iframe>
 
 
 ### The Good
