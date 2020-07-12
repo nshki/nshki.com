@@ -68,8 +68,10 @@
     font-size: 0.8rem;
     text-decoration: none;
 
-    &:not(:hover) {
-      color: rgba(255, 255, 255, 0.7);
+    @media (prefers-color-scheme: dark) {
+      &:not(:hover) {
+        color: rgba(#fff, 0.7);
+      }
     }
 
     @media (min-width: 400px) {

@@ -35,7 +35,11 @@
   }
 
   strong {
-    color: rgba(255, 255, 255, 0.85);
+    color: #000;
+
+    @media (prefers-color-scheme: dark) {
+      color: rgba(#fff, 0.85);
+    }
   }
 
   p {
@@ -43,9 +47,13 @@
   }
 
   .highlighter-rouge {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #2b333f;
     overflow-x: scroll;
     padding: 0.2em;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(#000, 0.4);
+    }
 
     .highlight {
       background: none;
@@ -57,12 +65,15 @@
   }
 
   blockquote {
-    background-color: rgba(0, 0, 0, 0.2);
     margin-left: 0;
     margin-right: 0;
     padding: 1px 1.5em;
     border-left: 2px solid #ffd794;
     font-style: italic;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(#000, 0.2);
+    }
   }
 
   ol {

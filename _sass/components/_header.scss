@@ -1,7 +1,11 @@
 .header {
-  background-color: rgba(#000, 0.25);
+  background-color: #f7f7f7;
   margin: 0 0 2rem;
   padding: 2rem 0;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(#000, 0.25);
+  }
 
   svg {
     max-width: 50px;
