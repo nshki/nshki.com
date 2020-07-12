@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Software Spectrum
+title: The software spectrum
 date: 2020-04-30
 permalink: /the-software-spectrum/
 description: Thoughts around how roles and responsibilities are getting blurrier and blurrier in the Web industry.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reflections on a Custom "Component"
+title: Reflections on a custom "Component"
 date: 2019-03-10
 permalink: /reflections-on-a-custom-component/
 description: My thoughts on defining a JavaScript pattern that I called "component" from pre-React days.

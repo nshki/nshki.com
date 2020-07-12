@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Test-Driven Reviews
+title: Test-driven reviews
 date: 2019-11-09
 permalink: /test-driven-reviews/
 description: My thoughts around using tests as the guideline for code reviews.

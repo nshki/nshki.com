@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vim, One Year In
+title: Vim, one year in
 date: 2019-01-26
 permalink: /vim-one-year-in/
 description: Reflecting on my decision to exclusively use Vim one year ago.

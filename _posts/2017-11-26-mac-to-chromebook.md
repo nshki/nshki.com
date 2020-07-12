@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Switching From a Mac to a Chromebook (as a Web Developer)
+title: Switching from a Mac to a Chromebook (as a web developer)
 date: 2017-11-26
 permalink: /mac-to-chromebook/
 description: This is my experience switching from a 2014 Retina Macbook Pro to a Google Pixelbook.

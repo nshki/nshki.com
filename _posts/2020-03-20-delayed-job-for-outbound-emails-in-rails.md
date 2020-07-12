@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Delayed::Job for Outbound Emails in Rails
+title: Delayed::Job for outbound emails in Rails
 date: 2020-03-20
 permalink: /delayed-job-for-outbound-emails-in-rails/
 description: A situational but noteworthy use case of Delayed::Job for outbound emails in Ruby on Rails.

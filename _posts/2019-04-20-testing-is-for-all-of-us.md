@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing is For All of Us
+title: Testing is for all of us
 date: 2019-04-20
 permalink: /testing-is-for-all-of-us/
 description: My thoughts on why I think automated testing is a crucial part of any software team.

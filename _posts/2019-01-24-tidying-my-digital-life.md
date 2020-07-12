@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tidying My Digital Life
+title: Tidying my digital life
 date: 2019-01-24
 permalink: /tidying-my-digital-life/
 description: Tidying up and Marie Kondo-fying my digital life.

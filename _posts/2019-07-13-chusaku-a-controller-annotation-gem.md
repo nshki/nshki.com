@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chusaku, a Controller Annotation Gem
+title: Chusaku, a controller annotation gem
 date: 2019-07-13
 permalink: /chusaku-a-controller-annotation-gem/
 description: A write-up of a Rails controller annotation gem.

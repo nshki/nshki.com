@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Into Open Source
+title: Getting into open source
 date: 2019-02-09
 permalink: /getting-into-open-source/
 description: My thoughts and experiences around getting involved in open source software through a project called if me.
