@@ -11,13 +11,13 @@
   font-size: 1.6rem;
   line-height: 1.2;
 
-  &--large {
-    font-size: 1.75rem;
-  }
-
   a {
     text-decoration: none;
   }
+}
+
+.post__title--large {
+  font-size: 1.75rem;
 }
 
 .post__meta {
