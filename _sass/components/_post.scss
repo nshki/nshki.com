@@ -51,6 +51,10 @@
     overflow-x: scroll;
     padding: 0.2em;
 
+    & + & {
+      margin-top: 1rem;
+    }
+
     @media (prefers-color-scheme: dark) {
       background-color: rgba(#000, 0.4);
     }
