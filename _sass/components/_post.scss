@@ -51,8 +51,8 @@
     overflow-x: scroll;
     padding: 0.2em;
 
-    & + & {
-      margin-top: 1rem;
+    & + .highlighter-rouge {
+      margin-top: 1.5rem;
     }
 
     @media (prefers-color-scheme: dark) {

@@ -8,9 +8,7 @@ description: A look at a long-standing CSS bug in Firefox and some approaches to
 
 _Hat tip to my coworker [Dylan](https://dylanatsmith.com/) for deep-diving into this issue with me and digging up the logged bug._
 
-Elements that scroll as its contents go beyond its given dimensions—this is a pretty common pattern in sites and apps. Unfortunately, it comes with a [9 year old bug in Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=748518).
-
-It's reasonable to want padding within these scrolling elements to give your content some breathing room as you reach the end of the scroll. This bug causes the end padding to be completely ignored. [Here is a pen to demonstrate](https://codepen.io/nshki_/pen/MWyBprL).
+Elements that scroll as its contents go beyond its given dimensions—this is a pretty common pattern in sites and apps. Unfortunately, it comes with a [9 year old bug in Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=748518). It's reasonable to want padding within these scrolling elements to give your content some breathing room as you reach the end of the scroll. This bug causes the end padding to be completely ignored. [Here is a pen to demonstrate](https://codepen.io/nshki_/pen/MWyBprL).
 
 Unfortunately, until this bug is fixed, we can't really solve this in a "correct" way. So here are some cross-browser methods to fix this issue.
 
