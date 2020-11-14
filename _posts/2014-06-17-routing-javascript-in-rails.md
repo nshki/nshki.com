@@ -2,7 +2,6 @@
 layout: post
 title: Routing JavaScript in Rails
 date: 2014-06-17
-permalink: /routing-javascript-in-rails/
 description: My take on extending Paul Irish's DOM-ready JS execution technique.
 ---
 

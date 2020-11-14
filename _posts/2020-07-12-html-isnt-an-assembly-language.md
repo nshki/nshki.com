@@ -2,7 +2,6 @@
 layout: post
 title: HTML isn't an assembly language
 date: 2020-07-12
-permalink: /html-isnt-an-assembly-language/
 description: Thoughts on how HTML isn't the means to an end, but an end product.
 ---
 

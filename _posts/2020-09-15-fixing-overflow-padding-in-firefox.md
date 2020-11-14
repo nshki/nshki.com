@@ -2,7 +2,6 @@
 layout: post
 title: Fixing overflow padding in Firefox
 date: 2020-09-15
-permalink: /fixing-overflow-padding-in-firefox/
 description: A look at a long-standing CSS bug in Firefox and some approaches to remedy it in your projects.
 ---
 
