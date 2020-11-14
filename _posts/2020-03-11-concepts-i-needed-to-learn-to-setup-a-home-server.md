@@ -2,7 +2,6 @@
 layout: post
 title: Concepts I needed to learn to setup a home server
 date: 2020-03-11
-permalink: /concepts-i-needed-to-learn-to-setup-a-home-server/
 description: (As a networking newbie.)
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title: Comment, because people
 date: 2013-12-27
-permalink: /comment-because-people/
 description: Good code needs comments. Good code needs comments because people.
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title: Reviving the blog
 date: 2019-01-21
-permalink: /reviving-the-blog/
 description: Motivations and thoughts around reviving my personal blog.
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title: Write code for people, not machines
 date: 2020-08-13
-permalink: /write-code-for-people-not-machines/
 description: If I could go back in time and talk to my past self, I'd encourage this particular mindset earlier.
 ---
 
