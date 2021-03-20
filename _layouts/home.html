@@ -4,20 +4,24 @@ layout: default
 
 {{ content }}
 
-{%- if site.posts.size > 0 -%}
-  {%- for post in site.posts -%}
-    <div class="post">
-      <h2 class="post__title">
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h2><!-- .post__title -->
+<article>
+  <h2>Hi, I'm Nishiki.</h2>
+  <p>
+    I've been building things for the web since 2005 with a particular affinity
+    for Ruby on Rails. I'm an advocate of open source and ethical software.
+  </p>
+</article>
 
-      <p class="post__meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: '%b %-d, %Y' }}
-        </time>
-      </p><!-- .post__meta -->
-    </div><!-- .post -->
+<ul class="list list--dated">
+  {%- for post in site.posts -%}
+    <li class="list__item">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: '%b %-d, %Y' }}
+      </time>
+
+      <a href="{{ post.url | relative_url }}">
+        <strong>{{ post.title | escape }}</strong>
+      </a>
+    </li><!-- .list__item -->
   {%- endfor -%}
-{%- endif -%}
+</ul><!-- .list -->

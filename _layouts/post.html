@@ -2,20 +2,16 @@
 layout: default
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <h2 class="post__title p-name" itemprop="name headline">
-      {{ page.title | escape }}
-    </h2><!-- .post__title -->
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <h2 itemprop="name headline">
+    {{ page.title | escape }}
+  </h2>
 
-    <p class="post__meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: '%b %-d, %Y' }}
-      </time>
-    </p><!-- .post__meta -->
-  </header>
+  <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    {{ page.date | date: '%b %-d, %Y' }}
+  </time>
 
-  <div class="post__content" itemprop="articleBody">
+  <div class="processed-content" itemprop="articleBody">
     {{ content }}
-  </div><!-- .post__content -->
-</article><!-- .post -->
+  </div><!-- .processed-content -->
+</article>

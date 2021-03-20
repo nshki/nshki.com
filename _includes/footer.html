@@ -1,32 +1,21 @@
 <footer class="footer">
-  <ul class="footer__menu">
-    <li class="footer__menu__item">
-      <a href="mailto:{{ site.email }}">
-        Email
-      </a>
-    </li><!-- .footer__menu__item -->
+  <div class="container">
+    <ul class="footer__menu">
+      <li class="footer__menu__item">
+        <a href="mailto:{{ site.email }}">Email</a>
+      </li><!-- .footer__menu__item -->
 
-    <li class="footer__menu__item">
-      <a href="https://twitter.com/{{ site.twitter.username }}">
-        Twitter
-      </a>
-    </li><!-- .footer__menu__item -->
+      <li class="footer__menu__item">
+        <a href="https://twitter.com/{{ site.twitter.username }}">Twitter</a>
+      </li><!-- .footer__menu__item -->
 
-    <li class="footer__menu__item">
-      <a href="https://github.com/{{ site.github.username }}">
-        GitHub
-      </a>
-    </li><!-- .footer__menu__item -->
+      <li class="footer__menu__item">
+        <a href="https://github.com/{{ site.github.username }}">GitHub</a>
+      </li><!-- .footer__menu__item -->
 
-    <li class="footer__menu__item">
-      <a href="{{ '/feed.xml' | relative_url }}">
-        RSS
-      </a>
-    </li><!-- .footer__menu__item -->
-  </ul><!-- .footer__menu -->
-
-  <div class="footer__graphics">
-    {%- include laptop.html -%}
-    {%- include lamp.html -%}
-  </div><!-- .footer__graphics -->
+      <li class="footer__menu__item">
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </li><!-- .footer__menu__item -->
+    </ul><!-- .footer__menu -->
+  </div><!-- .container -->
 </footer><!--- .footer -->
