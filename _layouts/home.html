@@ -2,22 +2,20 @@
 layout: default
 ---
 
-{{ content }}
+<article>
+  {{ content }}
+</article>
 
-{%- if site.posts.size > 0 -%}
+<ul class="list list--dated">
   {%- for post in site.posts -%}
-    <div class="post">
-      <h2 class="post__title">
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h2><!-- .post__title -->
+    <li class="list__item">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: '%b %-d, %Y' }}
+      </time>
 
-      <p class="post__meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: '%b %-d, %Y' }}
-        </time>
-      </p><!-- .post__meta -->
-    </div><!-- .post -->
+      <a href="{{ post.url | relative_url }}">
+        <strong>{{ post.title | escape }}</strong>
+      </a>
+    </li><!-- .list__item -->
   {%- endfor -%}
-{%- endif -%}
+</ul><!-- .list -->
