@@ -4,8 +4,6 @@
 
 .footer__menu {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -14,4 +12,8 @@
 .footer__menu__item {
   font-size: 0.875rem;
   text-transform: uppercase;
+
+  & + & {
+    margin-left: 2rem;
+  }
 }
