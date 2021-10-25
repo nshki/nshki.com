@@ -42,17 +42,17 @@ FROM ruby:2.7.4
 RUN apt-get update && apt-get install -y npm && npm install -g yarn
 
 # Setup working directory.
-RUN mkdir -p /var/caribou
-WORKDIR /var/caribou
+RUN mkdir -p /var/my-project-name
+WORKDIR /var/my-project-name
 
 # Setup dependencies. Split into separate step to utilize Docker cache.
-COPY Gemfile* /var/caribou/
+COPY Gemfile* /var/my-project-name/
 RUN bundle install
-COPY yarn.lock /var/caribou/
+COPY yarn.lock /var/my-project-name/
 RUN bin/yarn install
 
 # Copy project files.
-COPY . /var/caribou
+COPY . /var/my-project-name
 
 # Command to boot server.
 #
@@ -87,7 +87,7 @@ services:
     links:
       - 'dynamodb-local'
     volumes:
-      - '.:/var/caribou'   # Mirror working directory in Dockerfile
+      - '.:/var/my-project-name'   # Mirror working directory in Dockerfile
     ports:
       - '3000:3000'
 
