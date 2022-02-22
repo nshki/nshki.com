@@ -75,7 +75,7 @@ export default (req, res) => {
 
 ### 3. Add custom JWT encode and decode functions
 
-Now, let’s add custom JWT encode and decode functions so that we can prepare to properly decode the session token. I ended up using the `[jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)` package [as suggested by NextAuth’s docs](https://next-auth.js.org/adapters/dgraph#working-with-jwt-session-and-auth-directive), so let’s install that.
+Now, let’s add custom JWT encode and decode functions so that we can prepare to properly decode the session token. I ended up using the [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) package [as suggested by NextAuth’s docs](https://next-auth.js.org/adapters/dgraph#working-with-jwt-session-and-auth-directive), so let’s install that.
 
 ```bash
 # For Yarn users
