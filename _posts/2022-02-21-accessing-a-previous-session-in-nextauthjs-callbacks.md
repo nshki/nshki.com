@@ -5,6 +5,10 @@ date: 2022-02-21
 description: A how-to on accessing previous session tokens to enable account merging or something similar using NextAuth.js.
 ---
 
+**Edit: February 22nd, 2022**: Balázs Orbán, the lead maintainer of NextAuth, [was kind enough to point out on Twitter](https://twitter.com/balazsorban44/status/1496322391059873796?s=20&t=k4AGaG_eh7gcPVJM4LhaDQ) that achieving this is much simpler by using the built-in [getToken()](https://next-auth.js.org/tutorials/securing-pages-and-api-routes#using-gettoken) function. Cheers for that! I've left the original article below.
+
+--
+
 I recently was working on a project that used [NextAuth.js](https://next-auth.js.org/) for its auth mechanism and needed to support account merging. e.g. If I’m already logged in via an email and password combination, I need to be able to “attach” an account from an OAuth service like Twitter or Discord to that main account.
 
 For folks who use NextAuth, this should already be possible if you’re using the [database session strategy](https://next-auth.js.org/getting-started/upgrade-v4#session-strategy), but it’s not quite as obvious if you’re using the JWT strategy. The objective is to have access to the previous session with an identifier you can use to reference a main account/user record. There is a [GitHub discussion](https://github.com/nextauthjs/next-auth/discussions/3946) open to address this very thing, but this article outlines a way you can access previous session tokens in your currently installed version of NextAuth.
