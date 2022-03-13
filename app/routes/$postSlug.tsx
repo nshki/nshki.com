@@ -1,6 +1,11 @@
 import { json, useLoaderData } from 'remix'
-import type { LoaderFunction } from 'remix'
+import type { LinksFunction, LoaderFunction } from 'remix'
 import { getPost } from '~/lib/post'
+import highlightStyles from 'highlight.js/styles/atom-one-dark.css'
+
+export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: highlightStyles }
+]
 
 export const loader: LoaderFunction = async ({ params }) => {
   if (!params.postSlug) {

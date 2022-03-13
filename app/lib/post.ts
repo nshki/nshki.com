@@ -1,6 +1,7 @@
 import path from 'path'
 import fs from 'fs/promises'
 import parseFrontMatter from 'front-matter'
+import hljs from 'highlight.js'
 import { marked } from 'marked'
 
 export type Post = {
@@ -14,7 +15,15 @@ export type Post = {
 
 export type PostAttributes = Omit<Post, 'filename' | 'slug' | 'html'>
 
-let postsPath = path.join(__dirname, '..', 'posts')
+// Configure Marked to use Highlight.js.
+marked.setOptions({
+  highlight: (code, lang) => {
+    return hljs.highlight(code, { language: lang || 'txt' }).value
+  }
+})
+
+// Point to where all posts live: `/posts`.
+const postsPath = path.join(__dirname, '..', 'posts')
 
 /**
  * Slugifies a given string in the following format: `post-name`.

@@ -6,11 +6,12 @@ import {
   Scripts,
   ScrollRestoration
 } from 'remix'
-import type { MetaFunction } from 'remix'
+import type { LinksFunction, MetaFunction } from 'remix'
+import styles from './tailwind.css'
 
-export const meta: MetaFunction = () => {
-  return { title: 'Nishiki Liu' }
-};
+export const meta: MetaFunction = () => ({ title: 'Nishiki Liu' })
+
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-amber-50 dark:bg-slate-800">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
