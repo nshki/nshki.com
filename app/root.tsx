@@ -7,9 +7,13 @@ import {
   ScrollRestoration
 } from 'remix'
 import type { LinksFunction, MetaFunction } from 'remix'
-import styles from './tailwind.css'
+import styles from '~/styles/base.css'
 
-export const meta: MetaFunction = () => ({ title: 'Nishiki Liu' })
+export const meta: MetaFunction = () => ({
+  charset: 'utf-8',
+  title: 'Nishiki Liu',
+  viewport: 'width=device-width,initial-scale=1'
+})
 
 export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
 
@@ -17,12 +21,10 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body className="bg-amber-50 dark:bg-slate-800">
+      <body>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
