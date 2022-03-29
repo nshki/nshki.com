@@ -61,6 +61,7 @@ svg {
 
 h1 {
   font-size: 2.25rem;
+  color: var(--color-text-strong);
 }
 
 p,
