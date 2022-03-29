@@ -10,6 +10,7 @@ export const LogoSvg = ({ width = 90, height = 61 }: LogoSvgProps) => (
     viewBox="0 0 90 61"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    aria-label="Logo"
   >
     <path
       fillRule="evenodd"
