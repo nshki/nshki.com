@@ -1,14 +1,99 @@
+@import url('https://rsms.me/inter/inter.css');
+
 :root {
-  --color-background: #282c34;
+  --color-primary: #ca8a1e;
+  --color-black: #000;
+  --color-white: #fafafa;
+
+  --color-background: #fafafa;
   --color-text: #979fad;
+  --color-text-strong: var(--color-black);
+  --color-link: rgba(0, 0, 0, 0.8);
+  --color-link-underline: rgba(0, 0, 0, 0.3);
+  --color-link-focus: var(--color-black);
+  --color-border: rgba(0, 0, 0, 0.2);
+
+  --font-body: 'Inter', sans-serif;
+  --font-body-var: 'Inter var', sans-serif;
 }
 
-*, *::before, *::after {
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #282c34;
+    --color-text-strong: var(--color-white);
+    --color-link: rgba(255, 255, 255, 0.8);
+    --color-link-underline: rgba(255, 255, 255, 0.3);
+    --color-link-focus: var(--color-white);
+    --color-border: rgba(255, 255, 255, 0.2);
+  }
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-family: var(--font-body);
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: var(--font-body-var);
+  }
 }
 
 body {
   background-color: var(--color-background);
   margin: 0;
+  overflow-x: hidden;
+  line-height: 1.5;
   color: var(--color-text);
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+p,
+ul,
+ol {
+  max-width: 64rem;
+  font-size: 1.25rem;
+}
+
+p strong {
+  color: var(--color-text-strong);
+}
+
+a {
+  text-decoration-color: var(--color-link-underline);
+  text-underline-offset: 0.3em;
+  color: var(--color-link);
+}
+
+a:hover,
+a:focus {
+  text-decoration-color: var(--color-primary);
+  color: var(--color-link-focus);
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a {
+    transition:
+      color 0.1s ease-in-out,
+      text-decoration-color 0.1s ease-in-out;
+  }
 }
