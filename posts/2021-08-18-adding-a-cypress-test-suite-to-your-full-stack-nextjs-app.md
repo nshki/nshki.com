@@ -99,7 +99,6 @@ This is another step that will vary depending on your use case, but for the sake
 
 Add a new workflow file at `.github/workflows/e2e_tests.yml`:
 
-{% raw %}
 ```yaml
 name: E2E tests (Cypress suite)
 on: [pull_request]
@@ -130,7 +129,6 @@ jobs:
         with:
           command: yarn cy:run
 ```
-{% endraw %}
 
 This example workflow makes a couple assumptions:
 

@@ -31,29 +31,27 @@ export default function Writing() {
   const posts = useLoaderData<Post[]>()
 
   return (
-    <>
-      <Container>
-        <Nav />
+    <Container>
+      <Nav />
 
-        <main>
-          <h1>Writing</h1>
+      <main>
+        <h1>Writing</h1>
 
-          <Grid>
-            {posts.map((post, index) => (
-              <Card
-                key={index}
-                to={`/${post.slug}`}
-                title={post.title}
-                date={new Date(post.date).toLocaleDateString('en-us')}
-                description={post.description}
-                large={index === 0}
-              />
-            ))}
-          </Grid>
-        </main>
+        <Grid>
+          {posts.map((post, index) => (
+            <Card
+              key={index}
+              to={`/${post.slug}`}
+              title={post.title}
+              date={new Date(post.date).toLocaleDateString('en-us')}
+              description={post.description}
+              large={index === 0}
+            />
+          ))}
+        </Grid>
+      </main>
 
-        <Footer />
-      </Container>
-    </>
+      <Footer />
+    </Container>
   )
 }

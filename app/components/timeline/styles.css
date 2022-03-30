@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0.5rem 0;
   list-style: none;
+  font-family: var(--font-mono);
 }
 
 .timeline__item {
