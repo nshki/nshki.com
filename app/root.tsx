@@ -18,7 +18,9 @@ export const meta: MetaFunction = () => ({
   'og:image': 'https://nshki.com/assets/og.png',
   'twitter:card': 'summary',
   'twitter:site': '@nshki_',
-  'twitter:image': 'https://nshki.com/assets/og.png'
+  'twitter:image': 'https://nshki.com/assets/og.png',
+  'twitter:title': 'Nishiki Liu',
+  'twitter:description': 'Personal site of a full-stack developer.'
 })
 
 export const links: LinksFunction = () => [

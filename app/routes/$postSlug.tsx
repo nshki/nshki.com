@@ -19,8 +19,10 @@ export const loader: LoaderFunction = ({ params }) => {
 
 export const meta: MetaFunction = ({ data }) => ({
   title: data.title,
+  'twitter:title': data.title,
   description: data.description,
-  'og:description': data.description
+  'og:description': data.description,
+  'twitter:description': data.description
 })
 
 export const links: LinksFunction = () => [
