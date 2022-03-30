@@ -9,12 +9,12 @@ import { Footer, footerLinks } from '~/components/footer'
 
 import highlightStyles from 'highlight.js/styles/atom-one-dark.css'
 
-export const loader: LoaderFunction = async ({ params }) => {
+export const loader: LoaderFunction = ({ params }) => {
   if (!params.postSlug) {
     throw Error('`postSlug` missing')
   }
 
-  return json(await getPost(params.postSlug))
+  return json(getPost(params.postSlug))
 }
 
 export const meta: MetaFunction = ({ data }) => ({

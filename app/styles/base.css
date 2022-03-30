@@ -150,3 +150,8 @@ a:active {
 .wysiwyg h6 {
   margin-top: 3rem;
 }
+
+.wysiwyg .hljs {
+  background-color: transparent;
+  padding: 0;
+}

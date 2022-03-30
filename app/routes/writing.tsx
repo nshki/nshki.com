@@ -11,7 +11,7 @@ import { Pet } from '~/components/svgs/pet'
 import { Footer, footerLinks } from '~/components/footer'
 
 export const loader: LoaderFunction = async () => {
-  let posts: Post[] = await getPosts()
+  let posts: Post[] = getPosts()
   posts.sort((a, b) => {
     if (a.date > b.date) return -1
     else if (a.date < b.date) return 1

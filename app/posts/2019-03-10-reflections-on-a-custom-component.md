@@ -18,7 +18,7 @@ I loved the idea of componentizing an application but was still married to the m
 
 Before moving on, here's a slightly stripped down version of what the `Component` class looked like in a project that used jQuery:
 
-```coffeescript
+```
 # component.coffee
 
 class Component
@@ -57,7 +57,7 @@ An instance of `Component` takes three arguments:
 
 An example usage of `Component` to be able to easily show/hide elements via an `.is-active` CSS class would be something like:
 
-```coffeescript
+```
 # toggler.coffee
 
 new Component 'toggler', ['toggleable'], (c) ->

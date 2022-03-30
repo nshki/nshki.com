@@ -86,7 +86,7 @@ javascripts/
 
 The `config/` directory will contain three files: `namespace.coffee`, `routing.coffee`, and `router.coffee`.
 
-```coffeescript
+```
 #===============================================================================
 # namespace.coffee
 #
@@ -98,7 +98,7 @@ window.NS = {}
 
 The namespace config file will simply define the primary namespace of the app. We’re assigning it to `window` so that it’s accessible globally. `NS` should be changed to the name of your app.
 
-```coffeescript
+```
 #===============================================================================
 # router.coffee
 #
@@ -129,7 +129,7 @@ document.addEventListener "page:load",        -> NS.router.init()
 
 This is a direct translation of Paul Irish’s UTIL object into CoffeeScript. I’m opting to use `addEventListener` to add DOM-ready events to make this architecture independent of jQuery. The `page:load` event is necessary only if you’re using Turbolinks.
 
-```coffeescript
+```
 #===============================================================================
 # routes.coffee
 #

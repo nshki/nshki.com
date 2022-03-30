@@ -31,7 +31,7 @@ Now, configuring Dynamoid can be done in a few ways. The way I opted for was to 
 
 I ended up Dockerizing this project by adding a `Dockerfile` and `docker-compose.yml`—the first to define an image and the second to orchestrate multiple containers.
 
-```docker
+```
 # Dockerfile.
 #
 # Swap Ruby version to applicable one for your project.
