@@ -4,6 +4,7 @@ import { getPost } from '~/lib/post'
 
 import { Container, containerLinks } from '~/components/container'
 import { Nav, navLinks } from '~/components/nav'
+import { Pet } from '~/components/svgs/pet'
 import { Footer, footerLinks } from '~/components/footer'
 
 import highlightStyles from 'highlight.js/styles/atom-one-dark.css'
@@ -39,6 +40,10 @@ export default function PostSlug() {
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </main>
+
+      <div className="footer-ornament">
+        <Pet />
+      </div>
 
       <Footer />
     </Container>

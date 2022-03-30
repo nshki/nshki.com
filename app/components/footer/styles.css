@@ -1,3 +1,13 @@
+.footer-ornament {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4rem;
+}
+
+.footer-ornament + .footer {
+  margin-top: 2rem;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

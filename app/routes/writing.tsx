@@ -7,6 +7,7 @@ import { Container, containerLinks } from '~/components/container'
 import { Nav, navLinks } from '~/components/nav'
 import { Grid, gridLinks } from '~/components/grid'
 import { Card, cardLinks } from '~/components/card'
+import { Pet } from '~/components/svgs/pet'
 import { Footer, footerLinks } from '~/components/footer'
 
 export const loader: LoaderFunction = async () => {
@@ -50,6 +51,10 @@ export default function Writing() {
           ))}
         </Grid>
       </main>
+
+      <div className="footer-ornament">
+        <Pet />
+      </div>
 
       <Footer />
     </Container>
