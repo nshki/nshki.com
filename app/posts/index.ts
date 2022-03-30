@@ -6,6 +6,7 @@ import * as post20190123 from '~/posts/2019-01-23-managing-wordpress-with-compos
 import * as post20190124 from '~/posts/2019-01-24-tidying-my-digital-life.md'
 import * as post20190126 from '~/posts/2019-01-26-vim-one-year-in.md'
 import * as post20190129 from '~/posts/2019-01-29-es6-in-gulp-projects.md'
+import * as post20190209 from '~/posts/2019-02-09-getting-into-open-source.md'
 import * as post20190310 from '~/posts/2019-03-10-reflections-on-a-custom-component.md'
 import * as post20190420 from '~/posts/2019-04-20-testing-is-for-all-of-us.md'
 import * as post20190713 from '~/posts/2019-07-13-chusaku-a-controller-annotation-gem.md'
@@ -31,6 +32,7 @@ export {
   post20190124,
   post20190126,
   post20190129,
+  post20190209,
   post20190310,
   post20190420,
   post20190713,
