@@ -15,7 +15,12 @@ export const meta: MetaFunction = () => ({
   viewport: 'width=device-width, initial-scale=1',
   description: 'Personal site of a full-stack developer.',
   'og:description': 'Personal site of a full-stack developer.',
-  'og:image': 'https://nshki.com/assets/og.png'
+  'og:image': 'https://nshki.com/assets/og.png',
+  'twitter:card': 'summary_large_image',
+  'twitter:site': '@nshki_',
+  'twitter:image': 'https://nshki.com/assets/og.png',
+  'twitter:title': 'Nishiki Liu',
+  'twitter:description': 'Personal site of a full-stack developer.'
 })
 
 export const links: LinksFunction = () => [

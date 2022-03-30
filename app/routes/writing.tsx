@@ -21,7 +21,8 @@ export const loader: LoaderFunction = async () => {
 }
 
 export const meta: MetaFunction = () => ({
-  title: 'Writing'
+  title: 'Writing',
+  'twitter:title': 'Writing'
 })
 
 export const links: LinksFunction = () => [
