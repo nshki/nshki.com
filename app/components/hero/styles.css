@@ -42,6 +42,10 @@
   .hero__illustration .illustration__person-right-eye {
     animation: blink-squint-look 10s ease-in-out infinite;
   }
+
+  .hero__illustration .illustration__pet-body {
+    animation: shake 10s ease-in-out infinite;
+  }
 }
 
 @keyframes lean-turn-reset {
@@ -59,4 +63,12 @@
   65%, 85%  { transform: scale3d(1, 1, 1)   translate3d(10%, 5%, 0); }
   95%       { transform: scale3d(1, 1, 1)   translate3d(8%, 3%, 0); }
   100%      { transform: scale3d(1, 1, 1)   translate3d(0,  0,  0); }
+}
+
+@keyframes shake {
+  0%, 57% { transform: rotate(0); }
+  58%     { transform: rotate(-2deg); }
+  59%     { transform: rotate(2deg); }
+  60%     { transform: rotate(-2deg); }
+  61%     { transform: rotate(0); }
 }
