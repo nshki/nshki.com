@@ -46,7 +46,7 @@ export const Timeline = () => (
       {
         title: 'Freelance',
         date: 'July 2006 – Present',
-        description: 'Web designer'
+        description: 'Web designer & developer'
       }
     ].map((timelineItem, index) => (
       <li key={`timeline-item-${index}`} className="timeline__item">

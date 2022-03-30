@@ -22,6 +22,12 @@ export const Nav = () => (
           </Link>
         </li>
       ))}
+
+      <li className="nav__item">
+        <a href="https://war.ukraine.ua/" className="nav__link">
+          {`Help 🇺🇦`}
+        </a>
+      </li>
     </ul>
   </nav>
 )
