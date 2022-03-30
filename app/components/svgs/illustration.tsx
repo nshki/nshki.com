@@ -135,6 +135,7 @@ export const IllustrationSvg = ({ width = 807, height = 555 }) => (
         <stop stopColor="#ffda9b" />
         <stop offset="1" stopColor="#cf8a16" />
       </linearGradient>
+
       <linearGradient
         id="gradient-desk"
         x1="417.5"
@@ -146,6 +147,7 @@ export const IllustrationSvg = ({ width = 807, height = 555 }) => (
         <stop stopColor="#61aeef" />
         <stop offset="1" stopColor="#005aa6" />
       </linearGradient>
+
       <linearGradient
         id="gradient-pet"
         x1="647.5"
