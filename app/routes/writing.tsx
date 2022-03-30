@@ -1,5 +1,5 @@
 import { json, useLoaderData, LinksFunction } from 'remix'
-import type { LoaderFunction } from 'remix'
+import type { LoaderFunction, MetaFunction } from 'remix'
 import { getPosts } from '~/lib/post'
 import type { Post } from '~/lib/post'
 
@@ -19,6 +19,10 @@ export const loader: LoaderFunction = async () => {
   })
   return json(posts)
 }
+
+export const meta: MetaFunction = () => ({
+  title: 'Writing'
+})
 
 export const links: LinksFunction = () => [
   ...containerLinks(),

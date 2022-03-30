@@ -1,5 +1,5 @@
 import { json, useLoaderData } from 'remix'
-import type { LinksFunction, LoaderFunction } from 'remix'
+import type { LinksFunction, LoaderFunction, MetaFunction } from 'remix'
 import { getPost } from '~/lib/post'
 
 import { Container, containerLinks } from '~/components/container'
@@ -9,13 +9,6 @@ import { Footer, footerLinks } from '~/components/footer'
 
 import highlightStyles from 'highlight.js/styles/atom-one-dark.css'
 
-export const links: LinksFunction = () => [
-  { rel: 'stylesheet', href: highlightStyles },
-  ...containerLinks(),
-  ...navLinks(),
-  ...footerLinks()
-]
-
 export const loader: LoaderFunction = async ({ params }) => {
   if (!params.postSlug) {
     throw Error('`postSlug` missing')
@@ -23,6 +16,19 @@ export const loader: LoaderFunction = async ({ params }) => {
 
   return json(await getPost(params.postSlug))
 }
+
+export const meta: MetaFunction = ({ data }) => ({
+  title: data.title,
+  description: data.description,
+  'og:description': data.description
+})
+
+export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: highlightStyles },
+  ...containerLinks(),
+  ...navLinks(),
+  ...footerLinks()
+]
 
 export default function PostSlug() {
   let post = useLoaderData()

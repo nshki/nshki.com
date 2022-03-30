@@ -12,7 +12,10 @@ import styles from '~/styles/base.css'
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
   title: 'Nishiki Liu',
-  viewport: 'width=device-width, initial-scale=1'
+  viewport: 'width=device-width, initial-scale=1',
+  description: 'Personal site of a full-stack developer.',
+  'og:description': 'Personal site of a full-stack developer.',
+  'og:image': 'https://nshki.com/assets/og.png'
 })
 
 export const links: LinksFunction = () => [
