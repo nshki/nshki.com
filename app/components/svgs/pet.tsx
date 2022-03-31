@@ -32,7 +32,7 @@ export const Pet = ({ width = 146, height = 67 }) => (
         y2="133"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#61aeef"/>
+        <stop offset="0" stopColor="#61aeef"/>
         <stop offset="1" stopColor="#005aa6"/>
       </linearGradient>
 
@@ -44,7 +44,7 @@ export const Pet = ({ width = 146, height = 67 }) => (
         y2="96"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#ffda9b"/>
+        <stop offset="0" stopColor="#ffda9b"/>
         <stop offset="1" stopColor="#dca343"/>
       </linearGradient>
     </defs>

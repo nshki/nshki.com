@@ -43,8 +43,17 @@
     animation: blink-squint-look 10s ease-in-out infinite;
   }
 
+  .hero__illustration .illustration__person-left-eye {
+    transform-origin: 378px 150px;
+  }
+
+  .hero__illustration .illustration__person-right-eye {
+    transform-origin: 449px 150px;
+  }
+
   .hero__illustration .illustration__pet-body {
     animation: shake 10s ease-in-out infinite;
+    transform-origin: 640px 408px;
   }
 }
 
