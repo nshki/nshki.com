@@ -31,11 +31,10 @@ export default function App() {
     console.info(`
       Fancy meeting you here.
 
-      Check out https://github.com/nshki/nshki.com for the source code, since
-      you're curious!
+      Check out https://github.com/nshki/nshki.com for the source code, since you're curious!
 
       Thanks for visiting my site. 🥂
-    `)
+    `.split('\n').map((line) => line.trim()).splice(1).join('\n'))
     setConsoleMessageSent(true)
   }
 
