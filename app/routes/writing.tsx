@@ -49,7 +49,7 @@ export default function Writing() {
               key={index}
               to={`/${post.slug}`}
               title={post.title}
-              date={new Date(post.date).toLocaleDateString('en-us')}
+              date={post.date}
               description={post.description}
               large={index === 0}
             />

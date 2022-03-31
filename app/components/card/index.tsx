@@ -18,6 +18,11 @@ export const Card = ({
   >
     <span className="card__title">{title}</span>
     <span className="card__description">{description}</span>
-    <time className="card__date">{date}</time>
+    <time
+      dateTime={date}
+      className="card__date"
+    >
+      {(new Date(date)).toLocaleDateString()}
+    </time>
   </Link>
 )
