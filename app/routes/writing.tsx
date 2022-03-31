@@ -2,6 +2,7 @@ import { json, useLoaderData, LinksFunction } from 'remix'
 import type { LoaderFunction, MetaFunction } from 'remix'
 import { getPosts } from '~/lib/post'
 import type { Post } from '~/lib/post'
+import { title } from '~/lib/meta'
 
 import { Container, containerLinks } from '~/components/container'
 import { Nav, navLinks } from '~/components/nav'
@@ -21,8 +22,7 @@ export const loader: LoaderFunction = async () => {
 }
 
 export const meta: MetaFunction = () => ({
-  title: 'Writing',
-  'twitter:title': 'Writing'
+  ...title('Writing')
 })
 
 export const links: LinksFunction = () => [
