@@ -6,7 +6,7 @@ export const heroLinks = () => [
 ]
 
 export const Hero = () => (
-  <article className="hero">
+  <div className="hero">
     <div className="hero__content">
       <p className="hero__paragraph">
         <strong>{`Hi there, my name is Nishiki.`}</strong>
@@ -21,5 +21,5 @@ export const Hero = () => (
     <div className="hero__illustration" aria-hidden>
       <IllustrationSvg width={558} height={384} />
     </div>
-  </article>
+  </div>
 )

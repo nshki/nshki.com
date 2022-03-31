@@ -12,7 +12,6 @@ import { title, description, image } from '~/lib/meta'
 import styles from '~/styles/base.css'
 
 export const meta: MetaFunction = () => ({
-  charset: 'utf-8',
   viewport: 'width=device-width, initial-scale=1',
   ...title('Nishiki Liu'),
   ...description('Personal site of a full-stack developer.'),
@@ -41,6 +40,8 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        {/* @ts-ignore */}
+        <meta charset="utf-8" />
         <Meta />
         <Links />
       </head>

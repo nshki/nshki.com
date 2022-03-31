@@ -39,7 +39,6 @@ export const IllustrationSvg = ({ width = 807, height = 555 }) => (
       y="121"
       width="20"
       height="37"
-      transform-origin="449 150"
       rx="10"
       fill="black"
     />
@@ -49,7 +48,6 @@ export const IllustrationSvg = ({ width = 807, height = 555 }) => (
       y="121"
       width="20"
       height="37"
-      transform-origin="378 150"
       rx="10"
       fill="black"
     />
@@ -95,7 +93,6 @@ export const IllustrationSvg = ({ width = 807, height = 555 }) => (
       className="illustration__pet-body"
       d="M560 418C560 391.49 581.49 370 608 370H675C701.51 370 723 391.49 723 418C723 444.51 701.51 466 675 466H608C581.49 466 560 444.51 560 418Z"
       fill="url(#gradient-pet)"
-      transform-origin="640 408"
     />
     <rect
       className="illustration__pet-right-eye"
@@ -132,7 +129,7 @@ export const IllustrationSvg = ({ width = 807, height = 555 }) => (
         y2="411"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#ffda9b" />
+        <stop offset="0" stopColor="#ffda9b" />
         <stop offset="1" stopColor="#cf8a16" />
       </linearGradient>
 
@@ -144,7 +141,7 @@ export const IllustrationSvg = ({ width = 807, height = 555 }) => (
         y2="507"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#61aeef" />
+        <stop offset="0" stopColor="#61aeef" />
         <stop offset="1" stopColor="#005aa6" />
       </linearGradient>
 
@@ -156,7 +153,7 @@ export const IllustrationSvg = ({ width = 807, height = 555 }) => (
         y2="466"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#ffda9b" />
+        <stop offset="0" stopColor="#ffda9b" />
         <stop offset="1" stopColor="#dca343" />
       </linearGradient>
     </defs>

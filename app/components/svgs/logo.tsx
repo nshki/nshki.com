@@ -1,9 +1,4 @@
-interface LogoSvgProps {
-  width?: number
-  height?: number
-}
-
-export const LogoSvg = ({ width = 90, height = 61 }: LogoSvgProps) => (
+export const LogoSvg = ({ width = 90, height = 61 }) => (
   <svg
     width={width}
     height={height}

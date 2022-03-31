@@ -39,7 +39,7 @@ export default function PostSlug() {
 
       <main className="wysiwyg">
         <time dateTime={post.date}>
-          {new Date(post.date).toLocaleDateString()}
+          {(new Date(post.date)).toLocaleDateString()}
         </time>
 
         <h1>{post.title}</h1>

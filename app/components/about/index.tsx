@@ -12,7 +12,7 @@ export const About = () => (
       <Timeline />
     </aside>
 
-    <article className="about__main">
+    <div className="about__main">
       <p className="about__paragraph">
         {`Currently, I work at `}
         <a href="https://atomic.vc">{`Atomic`}</a>
@@ -44,6 +44,6 @@ export const About = () => (
         `}
         <a href="mailto:hello@nshki.com">{`please reach out`}</a>{`.`}
       </p>
-    </article>
+    </div>
   </div>
 )
