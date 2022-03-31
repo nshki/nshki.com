@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   Links,
   LiveReload,
@@ -28,6 +29,19 @@ export const links: LinksFunction = () => [
 ]
 
 export default function App() {
+  let [consoleMessageSent, setConsoleMessageSent] = useState(false);
+  if (!consoleMessageSent) {
+    console.info(`
+      Fancy meeting you here.
+
+      Check out https://github.com/nshki/nshki.com for the source code, since
+      you're curious!
+
+      Thanks for visiting my site. 🥂
+    `)
+    setConsoleMessageSent(true)
+  }
+
   return (
     <html lang="en">
       <head>
