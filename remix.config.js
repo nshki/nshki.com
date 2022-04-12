@@ -13,7 +13,7 @@ module.exports = {
   // serverBuildPath: "api/index.js",
   // publicPath: "/build/",
   // devServerPort: 8002,
-  mdx: async (filename) => {
+  mdx: async () => {
     const [rehypeHighlight] = await Promise.all([
       import('rehype-highlight').then((mod) => mod.default)
     ])

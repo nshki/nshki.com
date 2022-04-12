@@ -1,3 +1,4 @@
+import type { LinksFunction, MetaFunction } from '@remix-run/node'
 import { useState } from 'react'
 import {
   Links,
@@ -6,12 +7,12 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration
-} from 'remix'
-import type { LinksFunction, MetaFunction } from 'remix'
+} from '@remix-run/react'
 import { title, description, image } from '~/lib/meta'
 import styles from '~/styles/base.css'
 
 export const meta: MetaFunction = () => ({
+  charset: 'utf-8',
   viewport: 'width=device-width, initial-scale=1',
   ...title('Nishiki Liu'),
   ...description('Personal site of a full-stack developer.'),
@@ -24,7 +25,7 @@ export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: styles }
 ]
 
-export default function App() {
+export default function App () {
   let [consoleMessageSent, setConsoleMessageSent] = useState(false);
   if (!consoleMessageSent) {
     console.info(`
@@ -40,7 +41,6 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
         <Meta />
         <Links />
       </head>

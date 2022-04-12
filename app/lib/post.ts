@@ -12,14 +12,14 @@ export type Post = {
 /**
  * Slugifies a given string in the following format: `post-name`.
  */
-function slugify(filename: string) {
+function slugify (filename: string) {
   return filename.replace(/^\d+-\d+-\d+-/, '').replace(/\.md$/, '')
 }
 
 /**
  * Retrieves all posts.
  */
-export function getPosts() {
+export function getPosts () {
   return Object.values(posts).map((post) => {
     return {
       slug: slugify(post.filename),
@@ -34,7 +34,7 @@ export function getPosts() {
 /**
  * Retrieves a single post by slug.
  */
-export function getPost(slug: string) {
+export function getPost (slug: string) {
   let posts = getPosts()
   let post = posts.find((postData) => postData.slug === slug)
   if (!post) {
