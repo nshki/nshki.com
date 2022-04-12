@@ -25,7 +25,7 @@ export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: styles }
 ]
 
-export default function App() {
+export default function App () {
   let [consoleMessageSent, setConsoleMessageSent] = useState(false);
   if (!consoleMessageSent) {
     console.info(`
