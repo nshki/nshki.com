@@ -1,7 +1,7 @@
 /**
  * Returns all meta tags associated with a page title.
  */
-export function title(text: string) {
+export function title (text: string) {
   return {
     title: text,
     'twitter:title': text
@@ -11,7 +11,7 @@ export function title(text: string) {
 /**
  * Returns all meta tags associated with a page description.
  */
-export function description(text: string) {
+export function description (text: string) {
   return {
     description: text,
     'og:description': text,
@@ -22,7 +22,7 @@ export function description(text: string) {
 /**
  * Returns all meta tags associated with a page image.
  */
-export function image(url: string) {
+export function image (url: string) {
   return {
     'og:image': url,
     'twitter:image': url

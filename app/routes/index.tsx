@@ -1,4 +1,4 @@
-import { LinksFunction } from 'remix'
+import type { LinksFunction } from '@remix-run/node'
 
 import { Container, containerLinks } from '~/components/container'
 import { Nav, navLinks } from '~/components/nav'
@@ -14,7 +14,7 @@ export const links: LinksFunction = () => [
   ...footerLinks()
 ]
 
-export default function Home() {
+export default function Home () {
   return (
     <Container>
       <Nav />

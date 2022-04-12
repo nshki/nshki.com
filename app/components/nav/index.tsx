@@ -1,4 +1,4 @@
-import { Link } from 'remix'
+import { Link } from '@remix-run/react'
 import { LogoSvg } from '~/components/svgs/logo'
 import styles from './styles.css'
 

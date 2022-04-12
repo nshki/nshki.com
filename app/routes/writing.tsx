@@ -1,7 +1,12 @@
-import { json, useLoaderData, LinksFunction } from 'remix'
-import type { LoaderFunction, MetaFunction } from 'remix'
-import { getPosts } from '~/lib/post'
+import type {
+  LinksFunction,
+  LoaderFunction,
+  MetaFunction
+} from '@remix-run/node'
 import type { Post } from '~/lib/post'
+import { json } from '@remix-run/node'
+import { useLoaderData } from '@remix-run/react'
+import { getPosts } from '~/lib/post'
 import { title } from '~/lib/meta'
 
 import { Container, containerLinks } from '~/components/container'
@@ -33,7 +38,7 @@ export const links: LinksFunction = () => [
   ...footerLinks()
 ]
 
-export default function Writing() {
+export default function Writing () {
   const posts = useLoaderData<Post[]>()
 
   return (
