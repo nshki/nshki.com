@@ -1,4 +1,4 @@
-import type { EntryContext } from '@remix-run/node'
+import type { EntryContext, HandleDataRequestFunction } from '@remix-run/node'
 import { RemixServer } from '@remix-run/react'
 import { renderToString } from 'react-dom/server'
 import etag from 'etag'
@@ -24,4 +24,21 @@ export default function handleRequest (
     status: responseStatusCode,
     headers: responseHeaders,
   })
+}
+
+export const handleDataRequest: HandleDataRequestFunction = async (
+  response: Response,
+  { request }
+) => {
+  let body = await response.text()
+
+  if (request.method.toLowerCase() === 'get') {
+    response.headers.set('etag', etag(body))
+
+    if (request.headers.get('If-None-Match') === response.headers.get('Etag')) {
+      return new Response('', { status: 304, headers: response.headers })
+    }
+  }
+
+  return response;
 }
