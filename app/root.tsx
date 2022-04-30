@@ -22,7 +22,13 @@ export const meta: MetaFunction = () => ({
 })
 
 export const links: LinksFunction = () => [
-  { rel: 'stylesheet', href: styles }
+  { rel: 'stylesheet', href: styles },
+  {
+    rel: 'alternate',
+    type: 'application/rss+xml',
+    title: 'RSS feed',
+    href: 'https://nshki.com/feed.xml'
+  }
 ]
 
 export default function App () {
