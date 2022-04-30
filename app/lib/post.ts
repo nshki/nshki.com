@@ -17,10 +17,10 @@ function slugify (filename: string) {
 }
 
 /**
- * Retrieves all posts.
+ * Retrieves all posts in reverse chronological order.
  */
 export function getPosts () {
-  return Object.values(posts).map((post) => {
+  let allPosts = Object.values(posts).map((post) => {
     return {
       slug: slugify(post.filename),
       title: post.attributes.title,
@@ -29,6 +29,14 @@ export function getPosts () {
       data: post
     }
   })
+
+  allPosts.sort((a, b) => {
+    if (a.date > b.date) return -1
+    else if (a.date < b.date) return 1
+    else return 0
+  })
+
+  return allPosts
 }
 
 /**

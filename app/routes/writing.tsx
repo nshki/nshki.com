@@ -18,11 +18,6 @@ import { Footer, footerLinks } from '~/components/footer'
 
 export const loader: LoaderFunction = async () => {
   let posts: Post[] = getPosts()
-  posts.sort((a, b) => {
-    if (a.date > b.date) return -1
-    else if (a.date < b.date) return 1
-    else return 0
-  })
   return json(posts)
 }
 
