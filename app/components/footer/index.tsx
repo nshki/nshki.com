@@ -10,7 +10,8 @@ export const Footer = () => (
       {[
         { text: 'Email', href: 'mailto:hello@nshki.com' },
         { text: 'Twitter', href: 'https://twitter.com/nshki_' },
-        { text: 'GitHub', href: 'https://github.com/nshki' }
+        { text: 'GitHub', href: 'https://github.com/nshki' },
+        { text: 'RSS', href: 'https://nshki.com/feed.xml' }
       ].map((footerLink, index) => (
         <li key={`footer-link-${index}`} className="footer__item">
           <a href={footerLink.href}>{footerLink.text}</a>
