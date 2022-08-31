@@ -1,0 +1,54 @@
+---
+---
+
+<div class="hero">
+  <div class="hero__content">
+    <p class="hero__paragraph">
+      <strong>{{ site.data.hero.heading }}</strong>
+      {{ site.data.hero.copy }}
+    </p>
+  </div>
+
+  <div class="hero__illustration" aria-hidden>
+    {% include svgs/illustration.svg %}
+  </div>
+</div>
+
+<div class="about">
+  <aside class="about__aside">
+    <ul class="timeline">
+      {% for timeline_item in site.data.timeline %}
+        <li class="timeline__item">
+          <span>
+            <p class="timeline__item__title">
+              {%- if timeline_item.href -%}
+                <a href="{{ timeline_item.href }}">{{ timeline_item.company }}</a>
+              {%- else -%}
+                {{ timeline_item.company }}
+              {%- endif -%}, {{ timeline_item.date }}
+            </p>
+            <p>{{ timeline_item.title }}</p>
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <div class="about__main">
+    <p class="about__paragraph">
+      {{ site.data.about.opener.before_company }}
+      <a href="{{ site.data.about.opener.company_link }}">{{ site.data.about.opener.company_name }}</a>
+      {{ site.data.about.opener.after_company }}
+    </p>
+
+    {% for paragraph in site.data.about.paragraphs %}
+      <p class="about__paragraph">{{ paragraph }}</p>
+    {% endfor %}
+
+    <p class="about__paragraph">
+      {{ site.data.about.closer.before_cta }}
+      <a href="{{ site.data.about.closer.cta_link }}">{{ site.data.about.closer.cta_text }}</a>
+      {{- site.data.about.closer.after_cta }}
+    </p>
+  </div>
+</div>

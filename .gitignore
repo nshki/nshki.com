@@ -1,10 +1,5 @@
-node_modules
-
-.cache
-.env
-.vercel
-.output
-
-/build/
-/public/build
-/api/index.js*
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

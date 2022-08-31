@@ -1,0 +1,11 @@
+items:
+  - text: Email
+    href: mailto:hello@nshki.com
+  - text: Twitter
+    href: https://twitter.com/nshki_
+  - text: GitHub
+    href: https://github.com/nshki
+  - text: RSS
+    href: /feed.xml
+
+copyright: © Nishiki Liu
