@@ -1,0 +1,19 @@
+---
+title: Writing
+footer:
+  ornament: true
+---
+
+<h1>Writing</h1>
+
+<div class="grid">
+  {% for post in site.posts %}
+    <a href="{{ post.url }}" class="card">
+      <span class="card__title">{{ post.title }}</span>
+      <span class="card__description">{{ post.description }}</span>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="card__date">
+        {{ post.date | date_to_string }}
+      </time>
+    </a>
+  {% endfor %}
+</div>

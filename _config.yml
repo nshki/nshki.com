@@ -1,0 +1,26 @@
+title: Nishiki Liu
+description: Personal blog of a full-stack developer
+author: Nishiki Liu
+url: https://nshki.com
+permalink: /:title
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      image: https://nshki.com/assets/og.png
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      image: https://nshki.com/assets/og.png
+      footer:
+        ornament: true
+
+plugins:
+  - jekyll-feed

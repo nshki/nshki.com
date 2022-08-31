@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {%- seo %}
+    <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" />
+    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}" />
+    {%- feed_meta %}
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="nav__logo" href="/">
+          {% include svgs/logo.svg %}
+        </a>
+
+        <ul class="nav__items">
+          {% for nav_item in site.data.nav.items %}
+            <li class="nav__item">
+              <a href="{{ nav_item.href }}">
+                {{ nav_item.text }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <main>
+        {{ content }}
+      </main>
+
+      {% if page.footer.ornament %}
+        <div class="footer-ornament">
+          {% include svgs/pet.svg %}
+        </div>
+      {% endif %}
+
+      <footer class="footer">
+        <ul class="footer__items">
+          {% for footer_item in site.data.footer.items %}
+            <li class="footer__item">
+              <a href="{{ footer_item.href }}">
+                {{ footer_item.text }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <p>{{ site.data.footer.copyright }}</p>
+      </footer>
+    </div>
+  </body>
+</html>
