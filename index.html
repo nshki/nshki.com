@@ -19,7 +19,7 @@
     <ul class="timeline">
       {% for timeline_item in site.data.timeline %}
         <li class="timeline__item">
-          <span>
+          <div>
             <p class="timeline__item__title">
               {%- if timeline_item.href -%}
                 <a href="{{ timeline_item.href }}">{{ timeline_item.company }}</a>
@@ -28,7 +28,7 @@
               {%- endif -%}, {{ timeline_item.date }}
             </p>
             <p>{{ timeline_item.title }}</p>
-          </span>
+          </div>
         </li>
       {% endfor %}
     </ul>
