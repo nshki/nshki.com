@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<main class="wysiwyg">
+<div class="wysiwyg">
   <time datetime="{{ page.date | date_to_xmlschema }}">
     {{ page.date | date_to_string }}
   </time>
@@ -10,4 +10,4 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   {{ content }}
-</main>
+</div>
