@@ -3,6 +3,7 @@ description: Personal blog of a full-stack developer
 author: Nishiki Liu
 url: https://nshki.com
 permalink: /:title
+timezone: US/Pacific
 
 defaults:
   -
