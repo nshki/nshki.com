@@ -11,6 +11,10 @@
   --syntax-7: #56b6c2;
   --syntax-8: #abb2bf;
 
+  @media (prefers-color-scheme: dark) {
+    .c, .cm, .cp, .c1, .cs { opacity: 0.5; }
+  }
+
   .c     { color: var(--syntax-8); } // Comment
   .cm    { color: var(--syntax-8); } // Comment.Multiline
   .cp    { color: var(--syntax-8); } // Comment.Preproc
