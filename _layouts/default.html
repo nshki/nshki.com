@@ -41,7 +41,12 @@
         <ul class="footer__items">
           {% for footer_item in site.data.footer.items %}
             <li class="footer__item">
-              <a href="{{ footer_item.href }}">
+              <a
+                href="{{ footer_item.href }}"
+                {% if footer_item.rel %}
+                  rel="{{ footer_item.rel }}"
+                {% endif %}
+              >
                 {{ footer_item.text }}
               </a>
             </li>
