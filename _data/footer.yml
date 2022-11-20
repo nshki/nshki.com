@@ -1,8 +1,6 @@
 items:
   - text: Email
     href: mailto:hello@nshki.com
-  - text: Twitter
-    href: https://twitter.com/nshki_
   - text: Mastodon
     href: https://ruby.social/@nshki
     rel: me
