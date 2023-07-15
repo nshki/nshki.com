@@ -2,6 +2,7 @@
 title: "Replacing ChromeOS with Linux on the 2017 Pixelbook (Eve)"
 description: A step-by-step guide for installing Linux on the Pixelbook and replacing ChromeOS.
 date: 2023-07-14 20:37:00 -0700
+image: https://nshki.com/assets/posts/replacing-chromeos-with-linux-on-the-2017-pixelbook-eve/pixelbook.jpg
 ---
 
 I admit, I absolutely nerd sniped myself this week when I told myself I wanted to install Linux on my 2017 Pixelbook (Eve). This particular Pixelbook is, to this day, one of my favorite pieces of computer hardware. It's incredibly thin and I love how unique it is with its sleek white slate on the back.
