@@ -30,7 +30,7 @@ t.string :my_array_column, default: [], array: true
 
 ...won't work with SQLite.
 
-Since my previous migrations were all no longer compatible with SQLite and there were a handful of column types I needed to rethink, I decided to scrap all `db/migrate/*.rb` files and start with a brand new migration. I referenced `db/schema.rb` to scaffold out the bulk of what I needed, and starting reading up on supported column types in SQLite.
+Since my previous migrations were all no longer compatible with SQLite and there were a handful of column types I needed to rethink, I decided to scrap all `db/migrate/*.rb` files and start with a brand new migration. I referenced `db/schema.rb` to scaffold out the bulk of what I needed, and started reading up on supported column types in SQLite.
 
 As a replacement for array columns, turns out JSON types with a SQLite type constraint can be used:
 
