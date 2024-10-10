@@ -1,7 +1,7 @@
 ---
 title: Finding boosts
 description: Musings on "boosts", what they are, and how I think they're important things to think about.
-date: 2024-10-09 18:30:00 -0800
+date: 2024-10-09 18:18:00 -0800
 ---
 
 When I first wrote my first line of HTML back in the early 2000s and saw text appear on the screen, I was elated. It felt like magic; this wasn’t just any instance of mashing a keyboard and seeing something on the screen, it was a deliberate act of formatting and producing a document to be shared on the web. I created this text. I experienced my first boost.
