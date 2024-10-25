@@ -2,30 +2,28 @@
   display: grid;
   gap: 3rem;
   padding: 5rem 0;
+
+  @media (min-width: 40rem) {
+    grid-template-columns: 40% 1fr;
+  }
 }
 
 .about__main {
   grid-row-start: 1;
+
+  @media (min-width: 40rem) {
+    grid-row-start: auto;
+  }
 }
 
 .about__paragraph {
   font-size: 1.5rem;
-}
 
-.about__paragraph:first-of-type {
-  margin-top: 0;
-}
-
-.about__paragraph:last-of-type {
-  margin-bottom: 0;
-}
-
-@media (min-width: 40rem) {
-  .about {
-    grid-template-columns: 40% 1fr;
+  &:first-of-type {
+    margin-top: 0;
   }
 
-  .about__main {
-    grid-row-start: auto;
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }

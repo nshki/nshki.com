@@ -1,14 +1,9 @@
 .container {
   max-width: 72rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+  padding-inline: 1rem;
+  margin-inline: auto;
 
-@media (min-width: 640px) {
-  .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
   }
 }

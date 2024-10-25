@@ -54,18 +54,12 @@ img {
   box-shadow: var(--shadow);
 }
 
-img,
-svg {
+:is(img, svg) {
   max-width: 100%;
   height: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:is(h1, h2, h3, h4, h5, h6) {
   color: var(--color-text-strong);
 }
 
@@ -73,24 +67,23 @@ h1 {
   font-size: 2.25rem;
 }
 
-p,
-ul,
-ol {
+:is(p, ul, ol) {
   font-size: 1.125rem;
 }
 
-p strong {
-  color: var(--color-text-strong);
+p {
+  & strong {
+    color: var(--color-text-strong);
+  }
+
+  & code {
+    background-color: var(--color-background-code);
+    padding: 0.25rem;
+    font-size: 1rem;
+  }
 }
 
-p code {
-  background-color: var(--color-background-code);
-  padding: 0.25rem;
-  font-size: 1rem;
-}
-
-code,
-pre {
+:is(code, pre) {
   font-family: var(--font-mono);
 }
 
@@ -118,39 +111,17 @@ a {
   text-decoration-color: var(--color-link-underline);
   text-underline-offset: 0.3em;
   color: var(--color-link);
-}
 
-a:hover,
-a:focus {
-  text-decoration-color: var(--color-primary);
-  color: var(--color-link-focus);
-}
-
-a:active {
-  opacity: 0.5;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a {
-    transition:
-      color 0.1s ease-in-out,
-      text-decoration-color 0.1s ease-in-out;
+  &:is(:hover, :focus) {
+    text-decoration-color: var(--color-primary);
+    color: var(--color-link-focus);
   }
-}
 
-.wysiwyg {
-  max-width: 40rem;
-}
+  &:active {
+    opacity: 0.5;
+  }
 
-.wysiwyg h2,
-.wysiwyg h3,
-.wysiwyg h4,
-.wysiwyg h5,
-.wysiwyg h6 {
-  margin-top: 3rem;
-}
-
-.wysiwyg .hljs {
-  background-color: transparent;
-  padding: 0;
+  @media (prefers-reduced-motion: no-preference) {
+    transition: color 0.1s ease-in-out, text-decoration-color 0.1s ease-in-out;
+  }
 }

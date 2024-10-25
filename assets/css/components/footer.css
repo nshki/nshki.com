@@ -2,10 +2,10 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 4rem;
-}
 
-.footer-ornament + .footer {
-  margin-top: 2rem;
+  & + .footer {
+    margin-top: 2rem;
+  }
 }
 
 .footer {
@@ -17,11 +17,11 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-family: var(--font-mono);
-}
 
-.footer > * {
-  margin: 0;
-  font-size: 0.875rem;
+  & > * {
+    margin: 0;
+    font-size: 0.875rem;
+  }
 }
 
 .footer__items {
@@ -31,10 +31,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-@media (min-width: 40rem) {
-  .footer__items {
+  @media (min-width: 40rem) {
     flex-direction: row;
     gap: 2rem;
   }

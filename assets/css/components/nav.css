@@ -5,6 +5,20 @@
   margin-top: 1.5rem;
   margin-bottom: 5rem;
   font-family: var(--font-mono);
+
+  @media (min-width: 640px) {
+    margin-bottom: 10rem;
+  }
+}
+
+.nav__logo {
+  @media (prefers-reduced-motion: no-preference) {
+    transition: transform 0.2s ease-in-out;
+
+    &:is(:hover, :focus) {
+      transform: translate3d(0, -0.2em, 0);
+    }
+  }
 }
 
 .nav__items {
@@ -15,25 +29,10 @@
   list-style: none;
 }
 
-.nav__item a {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.875rem;
-}
-
-@media (min-width: 640px) {
-  .nav {
-    margin-bottom: 10rem;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .nav__logo {
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .nav__logo:hover,
-  .nav__logo:focus {
-    transform: translate3d(0, -0.2em, 0);
+.nav__item {
+  & > a {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
   }
 }
