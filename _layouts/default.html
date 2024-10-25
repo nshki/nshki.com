@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {%- seo %}
+    {% assign cache_bust = site.time | date:"?v=%s" %}
     <link rel="icon" href="{{ "/favicon.ico" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/base.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/about.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/card.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/container.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/footer.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/grid.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/hero.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/nav.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/timeline.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/components/wysiwyg.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/base.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/about.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/card.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/container.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/footer.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/grid.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/hero.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/nav.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/timeline.css" | relative_url | append: cache_bust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/components/wysiwyg.css" | relative_url | append: cache_bust }}">
     {%- feed_meta %}
   </head>
 
