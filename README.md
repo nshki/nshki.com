@@ -2,13 +2,4 @@
 
 # nshki.com
 
-This is the repository for my personal site.
-
-Built with [Jekyll](https://jekyllrb.com/), illustrated with [Figma](https://figma.com/), and vanilla CSS for the rest.
-
-## Local development
-
-```
-$ bundle install
-$ bundle exec jekyll serve
-```
+This is the repository for my personal site. Built with [Nuxt](https://nuxt.com/).
