@@ -48,7 +48,7 @@ async function main() {
 
   // Add posts to feed and generate files.
   posts.forEach((post) => feed.addItem(post))
-  fs.writeFileSync("./feed.xml", feed.rss2())
+  fs.writeFileSync("public/feed.xml", feed.rss2())
 }
 
 main()
