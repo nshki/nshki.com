@@ -44,7 +44,7 @@ describe("generateHTML()", () => {
       const result = generateHTML(nodes)
 
       let expectedHTML = ""
-      expectedHTML += `<div class="content">`
+      expectedHTML += `<div>`
       expectedHTML += `This is the main content`
       expectedHTML += `<img src="https://absolute.nshki.com/path/to/img" />`
       expectedHTML += `<a href="https://nshki.com/path/to/link">Link</a>`

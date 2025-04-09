@@ -13,6 +13,9 @@ export function generateHTML(nodes: Array<MDCNode>) {
       // Render HTML attributes.
       let attributes = ""
       for (const propKey in node?.props) {
+        // Only allowlist a handful of attributes.
+        if (!["src", "href", "alt"].includes(propKey)) continue;
+
         let propValue = node.props[propKey]
         if (["src", "href"].includes(propKey) && propValue.startsWith("/")) {
           propValue = `${APP_URL}${propValue}`
@@ -31,7 +34,7 @@ export function generateHTML(nodes: Array<MDCNode>) {
         html += `<${tagName}${attributes}>${children}</${tagName}>`
       }
     } else if (node.type === "text") {
-      html += node.value
+      html += node.value.replaceAll("<", "&lt;").replaceAll(">", "&gt;")
     }
   })
 
