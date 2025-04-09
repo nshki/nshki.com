@@ -3,9 +3,9 @@ import { Feed, type Item } from "feed"
 import fg from "fast-glob"
 import fs from "fs"
 
-import { APP_URL } from "~/utils/constants"
-import { generateHTML } from "~/utils/generate-html"
-import { slugFromPath } from "~/utils/slug-from-path"
+import { APP_URL } from "../utils/constants"
+import { generateHTML } from "../utils/generate-html"
+import { slugFromPath } from "../utils/slug-from-path"
 
 /**
  * Generates feed files based on posts.
