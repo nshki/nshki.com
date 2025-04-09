@@ -1,4 +1,4 @@
-![](https://github.com/nshki/nshki.com/blob/main/assets/og.png?raw=true)
+![](https://github.com/nshki/nshki.com/blob/main/public/assets/og.png?raw=true)
 
 # nshki.com
 
