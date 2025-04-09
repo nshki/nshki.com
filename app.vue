@@ -6,6 +6,17 @@ useSeoMeta({
   ogDescription: "Personal blog of a full-stack developer.",
   ogImage: "https://nshki.com/assets/og.png"
 })
+
+useHead({
+  link: [
+    {
+      rel: "alternate",
+      type: "application/rss+xml",
+      title: "Nishiki Liu",
+      href: "https://nshki.com/feed.xml"
+    }
+  ]
+})
 </script>
 
 <template>
