@@ -3,14 +3,12 @@ import { Feed, type Item } from "feed"
 import fg from "fast-glob"
 import fs from "fs"
 
-import { APP_URL } from "../utils/constants"
-import { generateHTML } from "../utils/generate-html"
-import { slugFromPath } from "../utils/slug-from-path"
+import { APP_URL } from "~/utils/constants"
+import { generateHTML } from "~/utils/generate-html"
+import { slugFromPath } from "~/utils/slug-from-path"
 
-/**
- * Generates feed files based on posts.
- */
-async function main() {
+// Generates feed files based on posts.
+export default defineEventHandler(async() => {
   const feed = new Feed({
     title: "Nishiki Liu",
     description: "Blog",
@@ -46,9 +44,7 @@ async function main() {
     })
   )
 
-  // Add posts to feed and generate files.
-  posts.forEach((post) => feed.addItem(post))
-  fs.writeFileSync("public/feed.xml", feed.rss2())
-}
-
-main()
+  // Add posts to feed and generate.
+  posts.reverse().forEach((post) => feed.addItem(post))
+  return feed.rss2()
+})
