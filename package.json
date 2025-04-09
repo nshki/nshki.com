@@ -1,0 +1,27 @@
+{
+  "name": "nshki.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "generate": "tsx scripts/generate-feed.ts && nuxt generate",
+    "preview": "nuxt preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@nuxt/content": "3.4.0",
+    "nuxt": "^3.16.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447",
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.17.2",
+    "@types/node": "^22.14.0",
+    "@vue/test-utils": "^2.4.6",
+    "feed": "^4.2.2",
+    "happy-dom": "^17.4.4",
+    "tsx": "^4.19.3",
+    "vitest": "^3.1.1"
+  }
+}
