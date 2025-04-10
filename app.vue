@@ -8,6 +8,12 @@ useSeoMeta({
 })
 
 useHead({
+  meta: [
+    {
+      name: "fediverse:creator",
+      content: "@nshki@ruby.social"
+    }
+  ],
   link: [
     {
       rel: "alternate",
