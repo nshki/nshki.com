@@ -1,6 +1,6 @@
 ---
 title: Vibe check, April 2025
-description: To fill out later.
+description: Starting a new, non-technical stream-of-consciousness series on the blog.
 date: 2025-04-20 17:00:00 -0700
 ---
 
