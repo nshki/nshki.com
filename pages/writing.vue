@@ -10,10 +10,6 @@ useSeoMeta({
 </script>
 
 <template>
-  <Head>
-    <Title>Writing | Nishiki Liu</Title>
-  </Head>
-
   <h1>Writing</h1>
 
   <Grid>

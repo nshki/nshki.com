@@ -13,10 +13,6 @@ useSeoMeta({
 </script>
 
 <template>
-  <Head>
-    <Title>{{ post?.title }} | Nishiki Liu</Title>
-  </Head>
-
   <div class="post">
     <time :datetime="date.toISOString()">{{ formatDate(date) }}</time>
     <h1>{{ post?.title }}</h1>
