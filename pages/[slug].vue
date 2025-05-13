@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const route = useRoute()
 const { data: posts } = await useAsyncData("posts", () => queryCollection("posts").all())
-const post = posts?.value?.find((post) => post.path.includes(route.path.slice(1)))
+const slug = route.path.split("/").at(1) || ""
+const post = posts?.value?.find((post) => post.path.includes(slug))
 const date = new Date(post?.date ?? "")
 
 useSeoMeta({
