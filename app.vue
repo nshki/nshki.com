@@ -41,21 +41,20 @@ useHead({
 :root {
   --color-primary: #ca8a1e;
   --color-black: #000;
-  --color-white: #fafafa;
+  --color-white: #fff;
+  --color-off-white: #fafafa;
 
-  --color-background: light-dark(var(--color-white), #282c34);
+  --color-background: light-dark(var(--color-off-white), #282c34);
   --color-background-code: light-dark(#fff, rgba(0, 0, 0, 0.2));
   --color-text: light-dark(#6b7079, #979fad);
   --color-text-strong: light-dark(var(--color-black), var(--color-white));
   --color-link: light-dark(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8));
-  --color-link-underline: light-dark(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
+  --color-link-underline: light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.3));
   --color-link-focus: light-dark(var(--color-black), var(--color-white));
-  --color-border: light-dark(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+  --color-border: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
 
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
-  --font-mono: SFMono-Regular, "Consolas", "Liberation Mono", "Menlo", monospace;
+  --font-body: system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 
   --shadow: 0 8px 8px -4.8px rgba(0, 0, 0, 0.3);
 
@@ -107,7 +106,7 @@ p {
 
   & code {
     background-color: var(--color-background-code);
-    padding: 4px;
+    padding: 2px 4px;
     font-size: 1rem;
   }
 }
@@ -138,7 +137,8 @@ blockquote {
 
 a {
   text-decoration-color: var(--color-link-underline);
-  text-underline-offset: 4.8px;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
   color: var(--color-link);
 
   &:is(:hover, :focus) {
@@ -151,7 +151,7 @@ a {
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    transition: color 0.1s ease-in-out, text-decoration-color 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 }
 </style>
