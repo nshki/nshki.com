@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData("posts", () => {
-  return queryCollection("posts").order("date", "DESC").all()
-})
+const { data: posts } = await useAsyncData("posts", () =>
+  queryCollection("posts").order("date", "DESC").all()
+)
 
 useSeoMeta({
   title: "Writing | Nishiki Liu",
-  ogTitle: "Writing",
+  ogTitle: "Writing"
 })
 </script>
 

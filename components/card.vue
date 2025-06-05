@@ -30,7 +30,7 @@ const date = new Date(props?.date as string)
   text-decoration: none;
 
   @media (prefers-reduced-motion: no-preference) {
-    transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   &:is(:hover, :focus) {
