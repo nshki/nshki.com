@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/content", "@nuxt/test-utils"],
   content: {
+    experimental: { sqliteConnector: "native" },
     build: {
       markdown: {
         highlight: {
