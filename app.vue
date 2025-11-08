@@ -11,7 +11,7 @@ useHead({
   meta: [
     {
       name: "fediverse:creator",
-      content: "@nshki@ruby.social"
+      content: "@nshki@hachyderm.io"
     }
   ],
   link: [
