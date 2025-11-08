@@ -6,7 +6,7 @@
       </li>
 
       <li class="footer__item">
-        <a href="https://ruby.social/@nshki" rel="me">Mastodon</a>
+        <a href="https://hachyderm.io/@nshki" rel="me">Mastodon</a>
       </li>
 
       <li class="footer__item">
