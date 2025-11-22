@@ -1,6 +1,6 @@
 ---
 title: Vibe check, November 2025
-description: Will write this later.
+description: Some stream of consciousness things in November 2025, over half a year since I've last written anything.
 date: 2025-11-22 10:52:00 -0800
 ---
 
