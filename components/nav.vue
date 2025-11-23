@@ -6,6 +6,10 @@
 
     <ul class="nav__items">
       <li class="nav__item">
+        <NuxtLink class="nav__link" href="/living">Living</NuxtLink>
+      </li>
+
+      <li class="nav__item">
         <NuxtLink class="nav__link" href="/writing">Writing</NuxtLink>
       </li>
     </ul>
