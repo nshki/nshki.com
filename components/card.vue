@@ -3,18 +3,26 @@ const props = defineProps({
   href: String,
   title: String,
   description: String,
-  date: String
+  date: String,
+  badgeInactive: Boolean,
+  badgeText: String
 })
 
-const date = new Date(props?.date as string)
+const parsedDate = props?.date ? new Date(props.date) : null
 </script>
 
 <template>
   <NuxtLink class="card" :href="href">
-    <span class="card__title">{{ props.title }}</span>
-    <span class="card__description">{{ props.description }}</span>
-    <time :datetime="date?.toISOString()" class="card__date">
-      {{ formatDate(date) }}
+    <span class="card__title">
+      {{ title }}
+
+      <Badge v-if="badgeText" :inactive="badgeInactive">{{ badgeText }}</Badge>
+    </span>
+
+    <span class="card__description">{{ description }}</span>
+
+    <time v-if="parsedDate" :datetime="parsedDate?.toISOString()" class="card__date">
+      {{ formatDate(parsedDate) }}
     </time>
   </NuxtLink>
 </template>
@@ -39,6 +47,10 @@ const date = new Date(props?.date as string)
 }
 
 .card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
   font-weight: 700;
 }
 
