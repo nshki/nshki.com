@@ -1,9 +1,12 @@
 <script setup lang="ts">
+const title = "Nishiki Liu"
+const description = "Personal site of a full-stack developer."
+
 useSeoMeta({
-  title: "Nishiki Liu",
-  ogTitle: "Nishiki Liu",
-  description: "Personal blog of a full-stack developer.",
-  ogDescription: "Personal blog of a full-stack developer.",
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description,
   ogImage: "https://nshki.com/assets/og.png"
 })
 
@@ -18,7 +21,7 @@ useHead({
     {
       rel: "alternate",
       type: "application/rss+xml",
-      title: "Nishiki Liu",
+      title,
       href: "https://nshki.com/feed.xml"
     }
   ]
@@ -52,6 +55,7 @@ useHead({
   --color-link-underline: light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.3));
   --color-link-focus: light-dark(var(--color-black), var(--color-white));
   --color-border: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
+  --color-go: #3bd236;
 
   --font-body: system-ui, sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -153,5 +157,19 @@ a {
   @media (prefers-reduced-motion: no-preference) {
     transition: all 0.2s ease-in-out;
   }
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 16px;
+}
+
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin: 0;
 }
 </style>

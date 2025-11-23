@@ -8,7 +8,7 @@ const post = posts?.value?.find((post) => post.path.includes(slug))
 const date = new Date(post?.date ?? "")
 
 useSeoMeta({
-  title: `${post?.title} | Nishiki Liu`,
+  title: `${post?.title}`,
   ogTitle: post?.title,
   description: post?.description,
   ogDescription: post?.description

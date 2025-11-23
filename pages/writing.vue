@@ -1,18 +1,19 @@
 <script setup lang="ts">
+const title = "Writing"
 const { data: posts } = await useAsyncData("posts", () =>
   queryCollection("posts").order("date", "DESC").all()
 )
 
 useSeoMeta({
-  title: "Writing | Nishiki Liu",
-  ogTitle: "Writing"
+  title,
+  ogTitle: title
 })
 </script>
 
 <template>
-  <h1>Writing</h1>
+  <h1>{{ title }}</h1>
 
-  <Grid>
+  <Grid expansive>
     <Card
       v-for="post in posts"
       :href="slugFromPath(post.path)"
