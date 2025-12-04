@@ -2,7 +2,7 @@
   <Grid more-spacing>
     <Book
       current
-      coverAssetUrl="/assets/pages/today/careless-people.jpg"
+      coverAssetUrl="/assets/pages/living/careless-people.jpg"
       title="Careless People"
       author="Sarah Wynn-Williams"
     >
@@ -16,7 +16,7 @@
     </Book>
 
     <Book
-      coverAssetUrl="/assets/pages/today/the-jakarta-method.jpg"
+      coverAssetUrl="/assets/pages/living/the-jakarta-method.jpg"
       title="The Jakarta Method"
       author="Vincent Bevins"
     >
@@ -29,7 +29,7 @@
     </Book>
 
     <Book
-      coverAssetUrl="/assets/pages/today/us.jpg"
+      coverAssetUrl="/assets/pages/living/us.jpg"
       title="Us"
       author="Terrence Real"
     >
@@ -42,7 +42,7 @@
     </Book>
 
     <Book
-      coverAssetUrl="/assets/pages/today/the-courage-to-be-disliked.jpg"
+      coverAssetUrl="/assets/pages/living/the-courage-to-be-disliked.jpg"
       title="The Courage To Be Disliked"
       author="Ichiro Kishimi & Fumitake Koga"
     >
@@ -55,7 +55,7 @@
     </Book>
 
     <Book
-      coverAssetUrl="/assets/pages/today/what-my-bones-know.jpg"
+      coverAssetUrl="/assets/pages/living/what-my-bones-know.jpg"
       title="What My Bones Know"
       author="Stephanie Foo"
     >
@@ -67,7 +67,7 @@
     </Book>
 
     <Book
-      coverAssetUrl="/assets/pages/today/know-my-name.jpg"
+      coverAssetUrl="/assets/pages/living/know-my-name.jpg"
       title="Know My Name"
       author="Chanel Miller"
     >
