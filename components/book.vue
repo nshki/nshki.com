@@ -41,6 +41,7 @@ defineProps({
 }
 
 .book__cover {
+  background-color: var(--color-border);
   width: 100%;
   height: auto;
 }
