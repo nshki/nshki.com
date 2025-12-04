@@ -2,14 +2,25 @@
   <Grid more-spacing>
     <Book
       current
+      coverAssetUrl="/assets/pages/living/extremely-hardcore.jpg"
+      title="Extremely Hardcore"
+      author="Zoë Schiffer"
+    >
+      <p>
+        A detailed account of events surrounding Elon Musk's takeover of then-Twitter.
+        While I saw surface-level things unfold while I was still on Twitter, this
+        book covers things in fascinating detail.
+      </p>
+    </Book>
+
+    <Book
       coverAssetUrl="/assets/pages/living/careless-people.jpg"
       title="Careless People"
       author="Sarah Wynn-Williams"
     >
       <p>
-        Working through this currently, but the ex-director of public policy at Meta
-        details her experience working there. She writes in a way that makes me feel
-        like I can really see through her eyes.
+        The ex-director of public policy at Meta details her experience working there.
+        She writes in a way that makes me feel like I can really see through her eyes.
       </p>
 
       <p>Immersive, captivating, and horrifying.</p>
