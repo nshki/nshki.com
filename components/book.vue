@@ -13,6 +13,7 @@ defineProps({
       class="book__cover"
       :src="coverAssetUrl"
       :alt="`${title} by ${author}`"
+      loading="lazy"
     />
 
     <div class="book__content">

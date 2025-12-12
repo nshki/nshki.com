@@ -2,6 +2,17 @@
   <Grid more-spacing>
     <Book
       current
+      coverAssetUrl="/assets/pages/living/the-anxious-generation.jpg"
+      title="The Anxious Generation"
+      author="Jonathan Haidt"
+    >
+      <p>
+        Fascinating deep-dive into how technology and social media has fundamentally
+        altered the mentality and emotionality in generations that grow up engulfed it.
+      </p>
+    </Book>
+
+    <Book
       coverAssetUrl="/assets/pages/living/extremely-hardcore.jpg"
       title="Extremely Hardcore"
       author="Zoë Schiffer"
