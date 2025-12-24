@@ -1,7 +1,6 @@
 <template>
   <Grid more-spacing>
     <Book
-      current
       coverAssetUrl="/assets/pages/living/the-anxious-generation.jpg"
       title="The Anxious Generation"
       author="Jonathan Haidt"
