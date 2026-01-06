@@ -6,7 +6,7 @@
           <a href="https://elly.ai/">Elly</a>,
           Apr 2025 – Present
         </p>
-        <p>Lead Engineer</p>
+        <p>Engineering Manager</p>
       </div>
     </li>
 
