@@ -1,0 +1,38 @@
+---
+interface Props {
+  expansive?: boolean
+  moreSpacing?: boolean
+}
+
+const { expansive = false, moreSpacing = false } = Astro.props
+---
+
+<div class:list={["grid", { "grid--expansive": expansive, "grid--more-spacing": moreSpacing }]}>
+  <slot />
+</div>
+
+<style>
+.grid {
+  width: 100%;
+  display: grid;
+  gap: 16px;
+
+  &.grid--more-spacing {
+    gap: 32px;
+  }
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+
+    &.grid--expansive > :global(:first-child) {
+      grid-column: span 2 / span 2;
+    }
+  }
+
+  &.grid--expansive {
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+</style>

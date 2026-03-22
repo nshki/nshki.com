@@ -2,4 +2,4 @@
 
 # nshki.com
 
-This is the repository for my personal site. Built with [Nuxt](https://nuxt.com/).
+This is the repository for my personal site. Built with [Astro](https://astro.build/).

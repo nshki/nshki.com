@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content"
+
+import BaseLayout from "@/layouts/base-layout.astro"
+import Grid from "@/components/grid.astro"
+import Card from "@/components/card.astro"
+import FooterOrnament from "@/components/footer-ornament.astro"
+import { slugFromId } from "@/utils/slug-from-id"
+
+const title = "Writing"
+const posts = [...await getCollection("posts")].sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+)
+---
+
+<BaseLayout title={title}>
+  <h1>{title}</h1>
+
+  <Grid expansive>
+    {posts.map((post) => (
+      <Card
+        href={`/${slugFromId(post.id)}`}
+        title={post.data.title}
+        description={post.data.description}
+        date={post.data.date.toString()}
+      />
+    ))}
+  </Grid>
+
+  <FooterOrnament />
+</BaseLayout>

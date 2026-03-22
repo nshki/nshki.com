@@ -1,10 +1,6 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
+# Astro
 dist
+.astro
 
 # Node dependencies
 node_modules
@@ -22,6 +18,3 @@ logs
 .env
 .env.*
 !.env.example
-
-# Custom
-public/feed.xml
