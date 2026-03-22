@@ -1,0 +1,65 @@
+---
+import { formatDate } from "@/utils/format-date"
+import Badge from "@/components/badge.astro"
+
+interface Props {
+  href: string
+  title: string
+  description: string
+  date?: string
+  badgeInactive?: boolean
+  badgeText?: string
+}
+
+const { href, title, description, date, badgeInactive = false, badgeText } = Astro.props
+const parsedDate = date ? new Date(date) : null
+---
+
+<a class="card" href={href}>
+  <span class="card__title">
+    {title}
+    {badgeText && <Badge inactive={badgeInactive}>{badgeText}</Badge>}
+  </span>
+
+  <span class="card__description">{description}</span>
+
+  {parsedDate && (
+    <time datetime={parsedDate.toISOString()} class="card__date">
+      {formatDate(parsedDate)}
+    </time>
+  )}
+</a>
+
+<style>
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 32px;
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:is(:hover, :focus) {
+    border-color: var(--color-primary);
+  }
+}
+
+.card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.card__date {
+  margin-top: auto;
+  margin-left: auto;
+  font-size: 0.875rem;
+}
+</style>

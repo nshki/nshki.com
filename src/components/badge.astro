@@ -1,19 +1,14 @@
-<script setup type="ts">
-defineProps({
-  inactive: Boolean
-})
-</script>
+---
+interface Props {
+  inactive?: boolean
+}
 
-<template>
-  <span
-    :class="{
-      badge: true,
-      'badge--inactive': inactive
-    }"
-  >
-    <slot />
-  </span>
-</template>
+const { inactive = false } = Astro.props
+---
+
+<span class:list={["badge", { "badge--inactive": inactive }]}>
+  <slot />
+</span>
 
 <style>
 .badge {

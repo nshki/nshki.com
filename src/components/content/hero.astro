@@ -1,18 +1,20 @@
-<template>
-  <div class="hero">
-    <div class="hero__content">
-      <p class="hero__paragraph">
-        <strong>Hi there, my name is Nishiki.</strong>
-        I'm a full-stack developer that enjoys everything from writing stylesheets to tweaking cloud infrastructure. And
-        illustrating sometimes.
-      </p>
-    </div>
+---
+import Illustration from "@/components/vector/illustration.astro"
+---
 
-    <div class="hero__illustration" aria-hidden>
-      <VectorIllustration />
-    </div>
+<div class="hero">
+  <div class="hero__content">
+    <p class="hero__paragraph">
+      <strong>Hi there, my name is Nishiki.</strong>
+      I'm a full-stack developer that enjoys everything from writing stylesheets to tweaking cloud infrastructure. And
+      illustrating sometimes.
+    </p>
   </div>
-</template>
+
+  <div class="hero__illustration" aria-hidden="true">
+    <Illustration />
+  </div>
+</div>
 
 <style>
 .hero {
@@ -47,24 +49,24 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .hero__illustration .illustration__person-body {
+  .hero__illustration :global(.illustration__person-body) {
     animation: lean-turn-reset 10s ease-in-out infinite;
   }
 
-  .hero__illustration .illustration__person-left-eye,
-  .hero__illustration .illustration__person-right-eye {
+  .hero__illustration :global(.illustration__person-left-eye),
+  .hero__illustration :global(.illustration__person-right-eye) {
     animation: blink-squint-look 10s ease-in-out infinite;
   }
 
-  .hero__illustration .illustration__person-left-eye {
+  .hero__illustration :global(.illustration__person-left-eye) {
     transform-origin: 378px 150px;
   }
 
-  .hero__illustration .illustration__person-right-eye {
+  .hero__illustration :global(.illustration__person-right-eye) {
     transform-origin: 449px 150px;
   }
 
-  .hero__illustration .illustration__pet-body {
+  .hero__illustration :global(.illustration__pet-body) {
     animation: shake 10s ease-in-out infinite;
     transform-origin: 640px 408px;
   }

@@ -1,21 +1,15 @@
-<script setup type="ts">
-defineProps({
-  expansive: Boolean,
-  moreSpacing: Boolean
-})
-</script>
+---
+interface Props {
+  expansive?: boolean
+  moreSpacing?: boolean
+}
 
-<template>
-  <div
-    :class="{
-      grid: true,
-      'grid--expansive': expansive,
-      'grid--more-spacing': moreSpacing
-    }"
-  >
-    <slot />
-  </div>
-</template>
+const { expansive = false, moreSpacing = false } = Astro.props
+---
+
+<div class:list={["grid", { "grid--expansive": expansive, "grid--more-spacing": moreSpacing }]}>
+  <slot />
+</div>
 
 <style>
 .grid {
@@ -30,7 +24,7 @@ defineProps({
   @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
 
-    &.grid--expansive > *:first-of-type {
+    &.grid--expansive > :global(:first-child) {
       grid-column: span 2 / span 2;
     }
   }

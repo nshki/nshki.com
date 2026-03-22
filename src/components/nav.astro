@@ -1,20 +1,22 @@
-<template>
-  <nav class="nav">
-    <NuxtLink class="nav__logo" href="/">
-      <VectorLogo />
-    </NuxtLink>
+---
+import Logo from "@/components/vector/logo.astro"
+---
 
-    <ul class="nav__items">
-      <li class="nav__item">
-        <NuxtLink class="nav__link" href="/living">Living</NuxtLink>
-      </li>
+<nav class="nav">
+  <a class="nav__logo" href="/">
+    <Logo />
+  </a>
 
-      <li class="nav__item">
-        <NuxtLink class="nav__link" href="/writing">Writing</NuxtLink>
-      </li>
-    </ul>
-  </nav>
-</template>
+  <ul class="nav__items">
+    <li class="nav__item">
+      <a class="nav__link" href="/living">Living</a>
+    </li>
+
+    <li class="nav__item">
+      <a class="nav__link" href="/writing">Writing</a>
+    </li>
+  </ul>
+</nav>
 
 <style>
 .nav {
