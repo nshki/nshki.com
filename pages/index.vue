@@ -1,4 +1,0 @@
-<template>
-  <Hero />
-  <About />
-</template>

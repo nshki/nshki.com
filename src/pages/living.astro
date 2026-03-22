@@ -1,20 +1,21 @@
-<script setup lang="ts">
+---
+import BaseLayout from "@/layouts/base-layout.astro"
+import Grid from "@/components/grid.astro"
+import Books from "@/components/content/books.astro"
+import Gear from "@/components/content/gear.astro"
+import Software from "@/components/content/software.astro"
+import OpenSource from "@/components/content/open-source.astro"
+import FooterOrnament from "@/components/footer-ornament.astro"
+
 const title = "Living"
 const description = "A collection of things I want to share from my life."
+---
 
-useSeoMeta({
-  title,
-  ogTitle: title,
-  description,
-  ogDescription: description
-})
-</script>
-
-<template>
-  <h1>{{ title }}</h1>
+<BaseLayout title={title} description={description}>
+  <h1>{title}</h1>
 
   <blockquote>
-    <p>{{ description }}</p>
+    <p>{description}</p>
   </blockquote>
 
   <div class="journey-container">
@@ -23,7 +24,7 @@ useSeoMeta({
       <Books />
     </section>
 
-    <Grid more-spacing>
+    <Grid moreSpacing>
       <section>
         <h2>Gear</h2>
         <Gear />
@@ -40,14 +41,10 @@ useSeoMeta({
       <OpenSource />
     </section>
 
-    <section>
-      <h2>Activities</h2>
-      <Activities />
-    </section>
   </div>
 
   <FooterOrnament />
-</template>
+</BaseLayout>
 
 <style>
 .journey-container {

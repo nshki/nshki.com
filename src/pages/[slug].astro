@@ -1,0 +1,44 @@
+---
+import type { GetStaticPaths } from "astro"
+import { getCollection, render } from "astro:content"
+
+import BaseLayout from "@/layouts/base-layout.astro"
+import FooterOrnament from "@/components/footer-ornament.astro"
+import { formatDate } from "@/utils/format-date"
+import { slugFromId } from "@/utils/slug-from-id"
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection("posts")
+  return posts.map((post) => ({
+    params: { slug: slugFromId(post.id) },
+    props: { post }
+  }))
+}) satisfies GetStaticPaths
+
+const { post } = Astro.props
+const { Content } = await render(post)
+const title = post.data.title
+const description = post.data.description
+const date = post.data.date
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="post">
+    <time datetime={date.toISOString()}>{formatDate(date)}</time>
+    <h1>{title}</h1>
+
+    <Content />
+  </div>
+
+  <FooterOrnament />
+</BaseLayout>
+
+<style>
+.post {
+  max-width: 640px;
+
+  :is(h2, h3, h4, h5, h6) {
+    margin-top: 48px;
+  }
+}
+</style>
