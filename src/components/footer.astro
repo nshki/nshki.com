@@ -52,7 +52,11 @@ import Stone from "@/components/vector/stone.astro"
 <style>
   .footer {
     background-color: var(--color-sand);
-    margin-top: 64px;
+    margin-top: 192px;
+
+    @media (min-width: 640px) {
+      margin-top: 96px;
+    }
   }
 
   .footer__mountains {
