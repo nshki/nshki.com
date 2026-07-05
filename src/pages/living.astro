@@ -5,7 +5,6 @@ import Books from "@/components/content/books.astro"
 import Gear from "@/components/content/gear.astro"
 import Software from "@/components/content/software.astro"
 import OpenSource from "@/components/content/open-source.astro"
-import FooterOrnament from "@/components/footer-ornament.astro"
 
 const title = "Living"
 const description = "A collection of things I want to share from my life."
@@ -40,16 +39,13 @@ const description = "A collection of things I want to share from my life."
       <h2>Open Source</h2>
       <OpenSource />
     </section>
-
   </div>
-
-  <FooterOrnament />
 </BaseLayout>
 
 <style>
-.journey-container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
+  .journey-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 </style>

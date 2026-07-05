@@ -34,36 +34,36 @@ const { coverAssetUrl, title, author, current = false } = Astro.props
 </article>
 
 <style>
-.book {
-  display: grid;
-  grid-template-columns: 0.3fr 0.7fr;
-  gap: 24px;
-  position: relative;
-}
-
-.book__cover {
-  background-color: var(--color-border);
-  width: 100%;
-  height: auto;
-}
-
-.book__title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.book__author {
-  margin-top: 0;
-  font-size: 1rem;
-  font-style: italic;
-}
-
-.book__description {
-  & > * {
-    font-size: 1rem;
+  .book {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    gap: 24px;
+    position: relative;
   }
-}
+
+  .book__cover {
+    background-color: var(--color-border);
+    width: 100%;
+    height: auto;
+  }
+
+  .book__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .book__author {
+    margin-top: 0;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  .book__description {
+    & > * {
+      font-size: 1rem;
+    }
+  }
 </style>

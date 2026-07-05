@@ -1,53 +1,160 @@
+---
+import Container from "@/components/container.astro"
+import Mountains from "@/components/vector/mountains.astro"
+import Shrine from "@/components/vector/shrine.astro"
+import Stone from "@/components/vector/stone.astro"
+---
+
 <footer class="footer">
-  <ul class="footer__items">
-    <li class="footer__item">
-      <a href="mailto:hello@nshki.com">Email</a>
-    </li>
+  <div class="footer__mountains">
+    <Mountains />
+  </div>
 
-    <li class="footer__item">
-      <a href="https://hachyderm.io/@nshki" rel="me">Mastodon</a>
-    </li>
+  <div class="footer__shrine">
+    <div class="footer__wall">
+      <div class="footer__wall__roof" />
+      <div class="footer__wall__pillar" />
+      <div class="footer__wall__base" />
+      <div class="footer__wall__sand" />
+      <div class="footer__wall__rise" />
+    </div>
 
-    <li class="footer__item">
-      <a href="https://github.com/nshki">GitHub</a>
-    </li>
+    <Shrine />
 
-    <li class="footer__item">
-      <a href="/feed.xml">RSS</a>
-    </li>
-  </ul>
+    <Stone />
+  </div>
 
-  <p>&copy; Nishiki Liu</p>
+  <Container>
+    <div class="footer__content">
+      <ul class="footer__items">
+        <li class="footer__item">
+          <a href="mailto:hello@nshki.com">Email</a>
+        </li>
+
+        <li class="footer__item">
+          <a href="https://hachyderm.io/@nshki" rel="me">Mastodon</a>
+        </li>
+
+        <li class="footer__item">
+          <a href="https://github.com/nshki">GitHub</a>
+        </li>
+
+        <li class="footer__item">
+          <a href="/feed.xml">RSS</a>
+        </li>
+      </ul>
+
+      <p>&copy; Nishiki Liu</p>
+    </div>
+  </Container>
 </footer>
 
 <style>
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 32px 0;
-  border-top: 1px solid var(--color-border);
-  margin: 64px 0 32px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: var(--font-mono);
+  .footer {
+    background-color: var(--color-sand);
+    margin-top: 64px;
+  }
 
-  & > * {
+  .footer__mountains {
+    background-color: var(--color-sky);
+    width: 100%;
+    height: 15vw;
+    position: relative;
+    overflow: hidden;
+
+    .mountains {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      bottom: -2vw;
+      right: 0;
+    }
+  }
+
+  .footer__shrine {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-72%);
+
+    @media (min-width: 640px) {
+      transform: translateY(-60%);
+    }
+
+    .footer__wall {
+      width: 100%;
+      height: 40%;
+      display: grid;
+      grid-template-rows: 0.11fr 0.11fr 0.22fr 0.02fr 0.4fr;
+      position: absolute;
+      z-index: -1;
+      top: 60%;
+
+      .footer__wall__roof {
+        background-color: var(--color-roof);
+      }
+
+      .footer__wall__pillar {
+        background-color: var(--color-pillars);
+      }
+
+      .footer__wall__base {
+        background-color: var(--color-wall);
+      }
+
+      .footer__wall__sand {
+        background-color: var(--color-sand);
+      }
+
+      .footer__wall__rise {
+        background-color: var(--color-wall-rise);
+      }
+    }
+
+    .stone {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateY(60%);
+      opacity: 0;
+
+      @media (min-width: 640px) {
+        opacity: 1;
+      }
+    }
+  }
+
+  .footer__content {
+    background-color: var(--color-sand);
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+    padding-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: var(--font-mono);
+
+    @media (min-width: 640px) {
+      margin-top: 0;
+    }
+
+    & > * {
+      margin: 0;
+      font-size: 0.875rem;
+    }
+  }
+
+  .footer__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     margin: 0;
-    font-size: 0.875rem;
-  }
-}
+    padding: 0;
+    list-style: none;
 
-.footer__items {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  @media (min-width: 640px) {
-    flex-direction: row;
-    gap: 32px;
+    @media (min-width: 640px) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
-}
 </style>

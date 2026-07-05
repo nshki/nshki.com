@@ -2,6 +2,16 @@
   <li class="timeline__item">
     <div>
       <p class="timeline__item__title">
+        <a href="https://github.com/">GitHub</a>,
+        June 2026 – Present
+      </p>
+      <p>Staff Design Engineer</p>
+    </div>
+  </li>
+
+  <li class="timeline__item">
+    <div>
+      <p class="timeline__item__title">
         <a href="https://elly.ai/">Elly</a>,
         Apr 2025 – May 2026
       </p>
@@ -80,56 +90,56 @@
 </ul>
 
 <style>
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding: 0;
-  margin: 8px 0;
-  list-style: none;
-  font-family: var(--font-mono);
-}
-
-.timeline__item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  position: relative;
-
-  &::before {
-    content: "";
-    background-color: var(--color-primary);
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+    margin: 8px 0;
+    list-style: none;
+    font-family: var(--font-mono);
   }
 
-  &::after {
-    content: "";
-    background-color: var(--color-border);
-    display: block;
-    width: 1px;
-    height: 100%;
-    position: absolute;
-    top: calc(100% - 4px);
-    left: 3px;
+  .timeline__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: var(--color-primary);
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+    }
+
+    &::after {
+      content: "";
+      background-color: var(--color-border);
+      display: block;
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      top: calc(100% - 4px);
+      left: 3px;
+    }
+
+    &:last-of-type::after {
+      display: none;
+    }
+
+    & p {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.875rem;
+    }
   }
 
-  &:last-of-type::after {
-    display: none;
+  .timeline__item__title {
+    font-weight: 500;
+    color: var(--color-text-strong);
   }
-
-  & p {
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.875rem;
-  }
-}
-
-.timeline__item__title {
-  font-weight: 500;
-  color: var(--color-text-strong);
-}
 </style>

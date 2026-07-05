@@ -3,7 +3,6 @@ import type { GetStaticPaths } from "astro"
 import { getCollection, render } from "astro:content"
 
 import BaseLayout from "@/layouts/base-layout.astro"
-import FooterOrnament from "@/components/footer-ornament.astro"
 import { formatDate } from "@/utils/format-date"
 import { slugFromId } from "@/utils/slug-from-id"
 
@@ -29,16 +28,14 @@ const date = post.data.date
 
     <Content />
   </div>
-
-  <FooterOrnament />
 </BaseLayout>
 
 <style>
-.post {
-  max-width: 640px;
+  .post {
+    max-width: 640px;
 
-  :is(h2, h3, h4, h5, h6) {
-    margin-top: 48px;
+    :is(h2, h3, h4, h5, h6) {
+      margin-top: 48px;
+    }
   }
-}
 </style>

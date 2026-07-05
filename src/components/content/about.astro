@@ -9,8 +9,13 @@ import Timeline from "@/components/content/timeline.astro"
 
   <div class="about__main">
     <p class="about__paragraph">
+      I'm a Staff Design Engineer at GitHub working remotely from Los Angeles.
+    </p>
+
+    <p class="about__paragraph">
       I started off building for the web in 2005 after discovering Photoshop, HTML, and CSS. I've since worked with
-      freelance clients, web agencies, early & late-stage startups, and a VC studio.
+      freelance clients, web agencies, early & late-stage startups, a venture capital studio, and a big tech
+      subsidiary.
     </p>
 
     <p class="about__paragraph">
@@ -27,33 +32,33 @@ import Timeline from "@/components/content/timeline.astro"
 </div>
 
 <style>
-.about {
-  display: grid;
-  gap: 48px;
-  padding: 80px 0;
+  .about {
+    display: grid;
+    gap: 48px;
+    padding: 80px 0;
 
-  @media (min-width: 640px) {
-    grid-template-columns: 40% 1fr;
-  }
-}
-
-.about__main {
-  grid-row-start: 1;
-
-  @media (min-width: 640px) {
-    grid-row-start: auto;
-  }
-}
-
-.about__paragraph {
-  font-size: 1.5rem;
-
-  &:first-of-type {
-    margin-top: 0;
+    @media (min-width: 640px) {
+      grid-template-columns: 40% 1fr;
+    }
   }
 
-  &:last-of-type {
-    margin-bottom: 0;
+  .about__main {
+    grid-row-start: 1;
+
+    @media (min-width: 640px) {
+      grid-row-start: auto;
+    }
   }
-}
+
+  .about__paragraph {
+    font-size: 1.5rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 </style>

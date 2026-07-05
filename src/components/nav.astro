@@ -1,8 +1,13 @@
 ---
 import Logo from "@/components/vector/logo.astro"
+import Sakura from "@/components/vector/sakura.astro"
 ---
 
 <nav class="nav">
+  <div class="nav__illustration">
+    <Sakura />
+  </div>
+
   <a class="nav__logo" href="/">
     <Logo />
   </a>
@@ -19,40 +24,53 @@ import Logo from "@/components/vector/logo.astro"
 </nav>
 
 <style>
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 24px;
-  margin-bottom: 80px;
-  font-family: var(--font-mono);
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 100px;
+    position: relative;
+    font-family: var(--font-mono);
 
-  @media (min-width: 640px) {
-    margin-bottom: 160px;
-  }
-}
-
-.nav__logo {
-  @media (prefers-reduced-motion: no-preference) {
-    transition: transform 0.2s ease-in-out;
-
-    &:is(:hover, :focus) {
-      transform: translate3d(0, -3px, 0);
+    @media (min-width: 400px) {
+      padding-bottom: 200px;
     }
   }
-}
 
-.nav__items {
-  display: flex;
-  gap: 32px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+  .nav__illustration {
+    max-width: 70%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100px;
+  }
 
-.nav__link {
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-  font-size: 0.875rem;
-}
+  .nav__logo {
+    display: inline-flex;
+
+    @media (prefers-reduced-motion: no-preference) {
+      .logo {
+        transition: all 0.2s ease-in-out;
+
+        &:is(:hover, :focus) {
+          --color-border: var(--color-white);
+        }
+      }
+    }
+  }
+
+  .nav__items {
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav__link {
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-size: 0.875rem;
+  }
 </style>

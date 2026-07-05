@@ -2,9 +2,20 @@
   --color-primary: #ca8a1e;
   --color-black: #000;
   --color-white: #fff;
-  --color-off-white: #fafafa;
+  --color-sky: light-dark(#fff7ea, #282c34);
+  --color-sun: #ffc658;
+  --color-roof: light-dark(#ffe3b8, #6b8996);
+  --color-pillars: light-dark(#fdcd96, #62758f);
+  --color-indoors: light-dark(#d7b179, #424e60);
+  --color-stairs: light-dark(#fff7ea, #8faebc);
+  --color-wall: light-dark(#fff7ea, #49586c);
+  --color-sand: light-dark(#ffeac9, #49586c);
+  --color-wall-rise: light-dark(#f5e1c1, #424e60);
+  --color-moss: light-dark(#d8e4c3, #576773);
+  --color-stone: light-dark(#f0f0f0, #818181);
+  --color-mountains-foreground: light-dark(#f5f2e1, #576773);
+  --color-mountains-background: light-dark(#edeeda, #6f7f82);
 
-  --color-background: light-dark(var(--color-off-white), #282c34);
   --color-background-code: light-dark(#fff, rgba(0, 0, 0, 0.2));
   --color-text: light-dark(#6b7079, #979fad);
   --color-text-strong: light-dark(var(--color-black), var(--color-white));
@@ -30,7 +41,7 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--color-sky);
   margin: 0;
   overflow-x: hidden;
   line-height: 1.5;

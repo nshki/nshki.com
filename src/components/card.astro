@@ -31,35 +31,35 @@ const parsedDate = date ? new Date(date) : null
 </a>
 
 <style>
-.card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 32px;
-  border: 1px solid var(--color-border);
-  text-decoration: none;
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 32px;
+    border: 1px solid var(--color-border);
+    text-decoration: none;
 
-  @media (prefers-reduced-motion: no-preference) {
-    transition: all 0.1s ease-in-out;
+    @media (prefers-reduced-motion: no-preference) {
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:is(:hover, :focus) {
+      border-color: var(--color-primary);
+    }
   }
 
-  &:is(:hover, :focus) {
-    border-color: var(--color-primary);
+  .card__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
   }
-}
 
-.card__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-}
-
-.card__date {
-  margin-top: auto;
-  margin-left: auto;
-  font-size: 0.875rem;
-}
+  .card__date {
+    margin-top: auto;
+    margin-left: auto;
+    font-size: 0.875rem;
+  }
 </style>
