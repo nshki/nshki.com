@@ -4,7 +4,7 @@ description: Another stream of consciousness over another half a year since I've
 date: 2026-07-05 16:14:00 -0700
 ---
 
-Blogging consistently is hard. The more I told myself, "I should write another post" made it weigh more heavily in my head. That paired with the industry-wide changes from AI, I sidelined it for a good while.
+Blogging consistently is hard. The more I told myself, "I should write another post," the more it made it weigh more heavily in my head. That paired with the industry-wide changes from AI, I sidelined it for a good while.
 
 There are a number of changes in my life that I'd like to jot down here.
 
